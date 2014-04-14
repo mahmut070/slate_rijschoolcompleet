@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-
+	// test test test
    /* Get the window's width, and check whether it is narrower than 480 pixels */
    var windowWidth = $(window).width();
    if (windowWidth <= 480 || true) {

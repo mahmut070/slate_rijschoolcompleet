@@ -1,0 +1,67 @@
+// *************************************
+//
+// Header
+// -> Main site header
+//
+// *************************************
+
+.Header {
+	background-image: url('../img/bg-header.png');
+	background-repeat: repeat-x;
+}
+
+// -------------------------------------
+// Module specific variables
+// -------------------------------------
+
+// -variable
+
+// -------------------------------------
+// Modifiers
+// -------------------------------------
+
+// .Module--modifierName
+
+// -------------------------------------
+// States
+// -------------------------------------
+
+// .is-module-state
+
+// -------------------------------------
+// Context
+// -------------------------------------
+
+// .has-module
+
+// -------------------------------------
+// Submodules
+// -------------------------------------
+.Header-image {
+	position: relative;
+	box-shadow: 4px 0px 4px #222,  -4px 0 4px #222;
+}
+
+.Header-image img {
+	width: 100%;
+	display: block;
+}
+
+.Header-slogan {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	text-align: center;
+	padding: 20px;
+	font-size: rem(38px);
+	color: $c-white;
+	font-family: $navFont;
+	background-color: rgba(31,105,170,0.7)
+}
+
+.Header-button {
+	@include linear-gradient(to bottom, $c-green, darken($c-green, 10%));
+	background-color: $c-green;
+	border-radius: 6px;
+	padding: 15px;
+}

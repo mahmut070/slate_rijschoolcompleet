@@ -1,5 +1,5 @@
 <?php
-
+ 
 add_action( 'after_setup_theme', 'navigation_walker_setup' );
 
 if ( ! function_exists( 'navigation_walker_setup' ) ):

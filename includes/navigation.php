@@ -1,4 +1,5 @@
-<?php wp_nav_menu(array(
+<?php
+wp_nav_menu(array(
     'container'=> 'nav',
     'menu' => 'main-nav',
     'container_class' =>'Navigation',

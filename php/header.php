@@ -29,12 +29,48 @@
     <!-- Head scripts, avoid including scripts here -->
     <!-- Don't forget to compile and minify the used modernizr features, or to remove it when unused -->
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/standalone/modernizr.js"></script>
-
+	<!-- Typekit -->
+	<script type="text/javascript" src="//use.typekit.net/our3dxe.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <!-- Wordpress head function -->
     <?php wp_head(); ?>
 
   </head>
-  <body <?php body_class(); ?> >
+<body <?php body_class(); ?> >
+	<?php include_once('ico/sprites.svg'); ?>
+	<!-- Topbar with logo -->
+	<div class="Topbar">
+		<div class="u-gridContainer">
+			
+			<div class="Topbar-logo">
+				<a href="/">
+					RIJSCHOOL SEDIKI
+				</a>
+			</div>
+			<div class="Topbar-contact">
+				<a href="tel:0641507461">
+					<svg class="Icon" viewBox="0 0 128 128">
+						<use xlink:href="#icon-phone"></use>
+					</svg>
+					06-41507461
+				</a>
+			</div>
+		</div>
+	</div>
 
-    <!-- Main navigation -->
-    <?php include 'includes/navigation.php'; ?>
+	<!-- Main navigation -->
+	<div class="Navigation-wrap">
+		<?php include 'includes/navigation.php'; ?>
+	</div>
+
+	<div class="Header">
+		<div class="u-gridContainer">
+			<div class="Header-image">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/polo.jpg" />
+				<div class="Header-slogan">
+					Meld je nu aan voor een proefles 
+					<span class="Header-button">Aanmelden</span>
+				</div>
+			</div>
+		</div>
+	</div> 

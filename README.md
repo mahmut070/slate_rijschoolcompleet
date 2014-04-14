@@ -2,7 +2,7 @@ Slate
 =====
 
 A basic wordpress framework with some useful opinionated defaults.
-
+ssss
 **Wiki table of contents**
 
 1. [Getting Started](https://github.com/Kah0ona/slate/wiki/1.-getting-started)

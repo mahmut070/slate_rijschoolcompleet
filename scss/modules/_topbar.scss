@@ -1,0 +1,72 @@
+
+// *************************************
+//
+// Topbar
+// -> Main site header
+//
+// *************************************
+
+.Topbar {
+  background-image: url('../img/dark_stripes.png');
+//  height: 3rem;
+  color: white;
+}
+
+// -------------------------------------
+// Module specific variables
+// -------------------------------------
+
+// -variable
+
+// -------------------------------------
+// Modifiers
+// -------------------------------------
+
+// .Module--modifierName
+
+// -------------------------------------
+// States
+// -------------------------------------
+
+// .is-module-state
+
+// -------------------------------------
+// Context
+// -------------------------------------
+
+// .has-module
+
+// -------------------------------------
+// Submodules
+// -------------------------------------
+.Topbar-logo {	
+	float: left;
+}
+
+.Topbar-logo a {
+	color: white;
+	font-size: rem(42px);
+	text-shadow: 2px 2px #222;
+	font-family: $navFont;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 7rem;
+}
+
+.Topbar-logo a:hover {
+	text-decoration: none;
+}
+.Topbar-contact {
+	margin-top: rem(16px);
+	float: right;
+	font-family: $navFont;
+}
+
+.Topbar-contact a {
+	font-size: rem(22px);
+	color: white;
+	fill: green;
+	line-height: 5rem;
+}
+
+
