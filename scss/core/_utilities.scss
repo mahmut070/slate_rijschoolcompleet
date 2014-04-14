@@ -41,6 +41,16 @@
   padding-top    : $l-whitespace;
 }
 
+.u-gridColumn3 {
+	@include span-columns(3);
+}
+.u-gridColumn6 {
+	@include span-columns(6);
+}
+.u-gridColumn9 {
+	@include span-columns(9);
+}
+
 // -------------------------------------
 // Text //
 // -------------------------------------

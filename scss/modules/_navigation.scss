@@ -6,6 +6,7 @@
 // *************************************
 
 .Navigation {
+  border-top: 3px solid white;
   text-align: center;
   background-color: $c-blue;
 }
@@ -46,6 +47,7 @@
 .Navigation-listItem {
   display: inline;
   margin: 0 1em;
+  font-size: rem(24px);
   &:first-of-type {
     margin-left: 0;
   }
@@ -60,7 +62,7 @@
   text-transform: uppercase;
   font-family: $navFont;
   color: $c-white;
-  line-height: rem(50px);
+  line-height: rem(62px);
 }
 
 .Navigation-link--invertedBold {

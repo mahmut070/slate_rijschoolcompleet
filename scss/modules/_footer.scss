@@ -1,0 +1,22 @@
+.Footer {
+	background-color: $c-blue;
+}
+
+.Footer-inner {
+	h4, p {
+		color: white;
+	}
+}
+
+.Footer-inner {
+
+}
+
+.Footer-inner .widget {
+	@include span-columns(6);
+}
+
+.Footer-socket {
+	background-color: $c-darkblue;
+	color: white;
+}

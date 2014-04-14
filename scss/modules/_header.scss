@@ -39,7 +39,7 @@
 // -------------------------------------
 .Header-image {
 	position: relative;
-	box-shadow: 4px 0px 4px #222,  -4px 0 4px #222;
+	box-shadow: $l-boxShadow;
 }
 
 .Header-image img {
