@@ -14,8 +14,8 @@ html {
 }
 
 body {
-  background  : $c-white;
-  color       : $c-black;
+  background  : $c-darkgrey;
+  color       : $c-white;
   font-family : $t-fontFamily;
   font-size   : 100%;
   line-height : $t-lineHeight;
@@ -70,7 +70,7 @@ ul {
 // -------------------------------------
 
 a {
-  color: $c-blue;
+  color: $c-yellow;
   text-decoration: none;
   &:hover,
   &:focus {
@@ -97,4 +97,3 @@ small {
 img {
   max-width: 100%;
 }
-

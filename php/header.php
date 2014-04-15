@@ -38,39 +38,50 @@
   </head>
 <body <?php body_class(); ?> >
 	<?php include_once('ico/sprites.svg'); ?>
-	<!-- Topbar with logo -->
-	<div class="Topbar">
+	
+	<!-- Navigation -->
+	<div class="Navigation-wrap ">
 		<div class="u-gridContainer">
-			
-			<div class="Topbar-logo">
-				<a href="/">
-					RIJSCHOOL SEDIKI
-				</a>
-			</div>
-			<div class="Topbar-contact">
-				<a href="tel:0641507461">
-					<svg class="Icon" viewBox="0 0 128 128">
-						<use xlink:href="#icon-phone"></use>
-					</svg>
-					06-41507461
-				</a>
+			<?php include 'includes/navigation.php'; ?>
+		</div>
+	</div>
+
+	<!-- Logo bar -->
+	<div class="u-gridRow">
+		<div class="u-gridContainer">
+			<div class="Logobar u-cf">
+				<div class="Logobar-image u-objLeft">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" />
+				</div> 
+				<div class="Logobar-social u-objRight">
+		          <svg class="Icon Icon--standalone" viewBox="0 0 128 128"><use xlink:href="#icon-facebook2"></use></svg>
+				</div> 
 			</div>
 		</div>
 	</div>
 
-	<!-- Main navigation -->
-	<div class="Navigation-wrap">
-		<?php include 'includes/navigation.php'; ?>
-	</div>
-
-	<div class="Header">
-		<div class="u-gridContainer">
-			<div class="Header-image">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/polo.jpg" />
-				<div class="Header-slogan">
-					Meld je nu aan voor een proefles 
-					<span class="Header-button">Aanmelden</span>
+	<!-- Slider -->
+	<div class="u-gridRow">
+		<div class="Slider">
+			<div class="Slider-frame">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slider.jpg" />
+				<div class="Slider-slogan">
+					<h5 class="Slider-heading">Hoogste slagingspercentage in de regio!</h5>
 				</div>
 			</div>
 		</div>
-	</div> 
+	</div>
+
+	<!-- Welcome -->
+	<div class="u-gridRow">
+		<div class="Welcome">
+			<h1 class="Welcome-title">Welkom op de website van Rijschool Compleet</h1>
+			<p class="Welcome-text">
+				Rijschool compleet is een rijschool met 10 jaar ervaring, en rijdt in de omgeving 
+				Waddinxveen. <br/> U kunt bij ons terecht voor autorijlessen, autorijlessen met aahangwagen, en motorrijlessen.
+			</p>
+		</div>
+	</div>
+
+
+	

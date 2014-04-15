@@ -55,13 +55,10 @@
 	padding: 20px;
 	font-size: rem(38px);
 	color: $c-white;
-	font-family: $navFont;
 	background-color: rgba(31,105,170,0.7)
 }
 
 .Header-button {
-	@include linear-gradient(to bottom, $c-green, darken($c-green, 10%));
-	background-color: $c-green;
 	border-radius: 6px;
 	padding: 15px;
 }

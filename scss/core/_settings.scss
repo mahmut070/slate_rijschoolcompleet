@@ -37,30 +37,26 @@
 // Variables
 // -------------------------------------
 
-// ----- Typekit Fonts ----- //
-$navFont: 'modesto-text', serif;
-
 // ----- Colors ----- //
+$c-darkgrey: #242424;
+$c-grey: lighten($c-darkgrey, 20%);
+$c-yellow: #ffc149;
+$c-purple: #4145a1;
+$c-white: #ffffff;
 
-$c-green: rgba(70,239,12,1);
-$c-black: #000;
-$c-blue  : #1F69AA;
-$c-darkblue: #17446c;
-$c-lightblue: #cfe1f1;
-$c-white : #FFFFFF;
+  
+
 // ----- Layout ----- //
-$l-whitespace: 0.5rem;
+$l-whitespace: 0.5rem; 
 
 // Borders & Box-shadows
-$l-border         : 1px solid $c-black;
 $l-borderRadius   : 3px;
 $l-boxShadow      : 4px 0px 4px #222,  -4px 0 4px #222;
 
 // ----- Text ----- //
 
 $t-fontFamily       : 'Open Sans', $helvetica;
-$navFont: 'modesto-text', serif;
-$t-headerFontFamily : $navFont;
+$t-headerFontFamily : 'Open Sans', $helvetica;
 $t-fontSize         : 16px;
 $t-lineHeight       : 1.5;
 

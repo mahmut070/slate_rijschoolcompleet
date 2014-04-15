@@ -4,11 +4,9 @@
 // -> Reusable navigation module
 //
 // *************************************
-
+ 
 .Navigation {
-  border-top: 3px solid white;
-  text-align: center;
-  background-color: $c-blue;
+  text-align: right;
 }
 
 // -------------------------------------
@@ -41,33 +39,51 @@
 
 // ----- List item ----- //
 .Navigation-wrap {
-	background-color: $c-blue;
+  background-color: $c-darkgrey;
+
+
+}
+.Navigation > ul {
+  font-size: 0;
 }
 
 .Navigation-listItem {
-  display: inline;
-  margin: 0 1em;
-  font-size: rem(24px);
+  display: inline-block;
+  //margin: 0 1em;
   &:first-of-type {
     margin-left: 0;
   }
   &:last-of-type {
     margin-right: 0;
   }
+  border-right: 1px solid $c-white;
+  padding: 0.7rem 1rem;
+
+  &:first-of-type {
+    border-left: 1px solid $c-white;
+  }
+
+  &:hover {
+    background-color: $c-purple;
+  }
 }
 
 // ----- Navigation link ----- //
-
 .Navigation-link {
-  text-transform: uppercase;
-  font-family: $navFont;
+  //text-transform: uppercase;
+  font-family: $t-headerFontFamily;
   color: $c-white;
-  line-height: rem(62px);
+  font-size: rem(16px);
+  line-height: 1.5;  
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .Navigation-link--invertedBold {
   color: $c-white; 
-  font-weight: bold;
+  //font-weight: bold;
 }
 
 

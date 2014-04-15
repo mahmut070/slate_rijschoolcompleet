@@ -28,7 +28,7 @@
 // ----- Settings ----- //
 @import "core/settings";
 
-// ----- Helpers ----- <F10>//
+// ----- Helpers ----- //
 @import "core/helpers";
 
 // ----- Base ----- //
@@ -41,11 +41,15 @@
 // Modules
 // -------------------------------------
 
+@import "modules/logobar";
+
 @import "modules/header";
 
 @import "modules/topbar";
 
-@import "modules/logo";
+@import "modules/slider";
+
+@import "modules/welcome";
 
 @import "modules/icon";
 
@@ -65,7 +69,9 @@
 
 @import "modules/footer";
 
-@import "modules/usp";
+
+
+
 // -------------------------------------
 // Inbox
 // -------------------------------------
