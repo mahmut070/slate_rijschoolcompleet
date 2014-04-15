@@ -6,6 +6,46 @@
 // *************************************
 
 .Offer {
-	background-color: $c-yellow
+	@include row();
+	padding-bottom: 20px;
+	background-color: $c-yellow;
 }
 
+.Offer-heading {
+	//text-align: center;
+	color: $c-darkgrey;
+}
+
+
+.Offer-item {
+	@include span-columns(6);
+	text-align: center;
+	//height: rem(250px);
+
+}
+
+.Offer-item img {
+	display: block;
+	margin: 0 auto;
+	height: 250px;
+}
+
+
+.section-heading {
+	display: table;
+	white-space: nowrap;
+}
+
+.section-heading:before {
+ 	background: linear-gradient(to bottom, $c-darkgrey, $c-darkgrey) no-repeat left center / 95% 1px;
+ 	content: "";
+ 	display: table-cell;
+ 	width: 50%;
+}
+
+.section-heading:after {
+ 	background: linear-gradient(to bottom, $c-darkgrey, $c-darkgrey) no-repeat right center / 95% 1px;
+ 	content: "";
+ 	display: table-cell;
+ 	width: 50%;
+}

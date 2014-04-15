@@ -6,13 +6,21 @@ Template Name: Homepage
 <?php get_header(); ?>
 	
 	<!-- Offer -->
-	<div class="u-gridRow">
-		<div class="Offer">
-			<div class="u-gridContainer">
-
+	<div class="Offer">
+		<div class="u-gridContainer">
+			<h2 class="Offer-heading section-heading">Aanbiedingen</h2>
+			<div class="Offer-item">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cashback.svg" />
+				<a class="Button Button--offer" href="#">Uitleg en meer acties
+				</a>
+			</div>
+			<div class="Offer-item">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cadeaubon.png" />
+				<a class="Button Button--offer" href="#">Meer informatie
+				</a>
 			</div>
 		</div>
-	</div>
+	</div> 
 
 
 
@@ -28,7 +36,7 @@ Template Name: Homepage
 					</div>
 				</article>
 			<?php endwhile; endif; ?>
-			</div> 
+			</div>   
 		</div>
 	</div>
 
