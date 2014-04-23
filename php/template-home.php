@@ -8,7 +8,7 @@ Template Name: Homepage
 	<!-- Offer -->
 	<div class="Offer">
 		<div class="u-gridContainer">
-			<h2 class="Offer-heading section-heading">Aanbiedingen</h2>
+			<h2 class="Offer-heading u-sectionHeading">Aanbiedingen</h2>
 			<div class="Offer-item">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cashback.svg" />
 				<a class="Button Button--offer" href="#">Uitleg en meer acties
@@ -24,8 +24,8 @@ Template Name: Homepage
 
 
 
-	<div>
-		<div>
+	<div class="u-gridRow">
+		<div class="u-gridContainer">
 			<div class="Content">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<article class="Content-article" id="post-<?php the_ID(); ?>">
