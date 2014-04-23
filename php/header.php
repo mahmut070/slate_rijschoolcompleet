@@ -59,7 +59,6 @@
 			</div>
 		</div>
 	</div>
-
 	<!-- Slider -->
 	<div class="u-gridRow">
 		<div class="Slider">
