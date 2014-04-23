@@ -79,3 +79,31 @@
   float: right;
 }
 
+
+.u-sectionHeading {
+  display: table;
+  white-space: nowrap;
+}
+
+.u-sectionHeading:before {
+  @include linear-gradient(to bottom, black, black);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 95% 1px;
+  background-color: transparent;
+  content: "";
+  display: table-cell;
+  width: 50%;
+}
+
+.u-sectionHeading:after {
+  @include linear-gradient(black, black);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 95% 1px;
+  background-color: transparent;
+  content: "";
+  display: table-cell;
+  width: 50%;
+}
+

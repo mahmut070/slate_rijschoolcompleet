@@ -34,7 +34,6 @@
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <!-- Wordpress head function -->
     <?php wp_head(); ?>
-
   </head>
 <body <?php body_class(); ?> >
 	<?php include_once('ico/sprites.svg'); ?>
@@ -84,4 +83,4 @@
 	</div>
 
 
-	
+

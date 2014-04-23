@@ -30,22 +30,3 @@
 	height: 250px;
 }
 
-
-.section-heading {
-	display: table;
-	white-space: nowrap;
-}
-
-.section-heading:before {
- 	background: linear-gradient(to bottom, $c-darkgrey, $c-darkgrey) no-repeat left center / 95% 1px;
- 	content: "";
- 	display: table-cell;
- 	width: 50%;
-}
-
-.section-heading:after {
- 	background: linear-gradient(to bottom, $c-darkgrey, $c-darkgrey) no-repeat right center / 95% 1px;
- 	content: "";
- 	display: table-cell;
- 	width: 50%;
-}
