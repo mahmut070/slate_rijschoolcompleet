@@ -20,10 +20,8 @@ Template Name: Homepage
 				</a>
 			</div>
 		</div>
-	</div> 
-
-
-
+	</div>  
+ 
 	<div class="u-gridRow">
 		<div class="u-gridContainer">
 			<div class="Content">
