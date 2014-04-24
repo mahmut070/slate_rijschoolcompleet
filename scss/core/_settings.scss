@@ -43,7 +43,7 @@ $c-grey: lighten($c-darkgrey, 20%);
 $c-yellow: #ffc149;
 $c-purple: #4145a1;
 $c-white: #ffffff;
-
+$c-brightyellow: #FEF200;
   
 
 // ----- Layout ----- //
@@ -55,8 +55,8 @@ $l-boxShadow      : 4px 0px 4px #222,  -4px 0 4px #222;
 
 // ----- Text ----- //
 
-$t-fontFamily       : 'Open Sans', $helvetica;
-$t-headerFontFamily : 'Open Sans', $helvetica;
+$t-fontFamily       : "proxima-nova", $georgia;
+$t-headerFontFamily : "proxima-nova", $helvetica;
 $t-fontSize         : 16px;
-$t-lineHeight       : 1.5;
+$t-lineHeight       : 1.6;
 

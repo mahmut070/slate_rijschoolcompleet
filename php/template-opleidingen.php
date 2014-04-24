@@ -1,39 +1,16 @@
 <?php
 /*
-Template Name: Homepage
+Template Name: Opleidingen template
 */
 ?>
 <?php get_header(); ?>
+
 	
-	<div class="u-gridRow">
-		<div class="Welcome">
-			<h1 class="Welcome-title">Welkom op de website van Rijschool Compleet</h1>
-			<p class="Welcome-text">
-				Rijschool compleet is een rijschool met 10 jaar ervaring, en rijdt in de omgeving 
-				Waddinxveen. <br/> U kunt bij ons terecht voor autorijlessen, autorijlessen met aahangwagen, en motorrijlessen.
-			</p>
-		</div>
-	</div>
-	<!-- Offer -->
-	<div class="Offer">
-		<div class="u-gridContainer">
-			<h2 class="Offer-heading u-section Heading">Aanbiedingen</h2>
-			<div class="Offer-item">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cashback.svg" />
-				<a class="Button Button--offer" href="#">Uitleg en meer acties
-				</a>
-			</div>
-			<div class="Offer-item">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cadeaubon.png" />
-				<a class="Button Button--offer" href="#">Meer informatie
-				</a>
-			</div>
-		</div>
-	</div>  
+
  
 	<div class="u-gridRow Content-wrap">
 		<div class="u-gridContainer">
-			<div class="Content u-gridColumn6">
+			<div class="u-gridColumn6">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<article class="Content-article" id="post-<?php the_ID(); ?>">
 					<?php if(!is_front_page()) { ?>
@@ -47,7 +24,7 @@ Template Name: Homepage
 			<?php endwhile; endif; ?>
 			</div>   
 
-			<div class="Usp u-gridColumn4 ">
+<!-- 			<div class="Usp u-gridColumn4 ">
 				<p>Nog even de voordelen op een rijtje:</p>
 				<ul class="Usp-list">
 					<li class="icon check"> Hoog slagingspercentage (81%-85 %)</li>
@@ -60,11 +37,11 @@ Template Name: Homepage
 					<p class="Usp-text">'Rijopleiding In Stappen'</p>
 					<li class="icon check"> Een goede service</li>
 				</ul>
-			</div>
+			</div> -->
 
 		</div>
 	</div>
-
+<!-- 
 	<div class="Review">
 		<div class="u-gridContainer">
 			<h2 class="Review-heading u-sectionHeadingWhite">Recensies</h2>
@@ -80,7 +57,7 @@ Template Name: Homepage
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 
 

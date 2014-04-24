@@ -30,8 +30,12 @@
     <!-- Don't forget to compile and minify the used modernizr features, or to remove it when unused -->
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/standalone/modernizr.js"></script>
 	<!-- Typekit -->
-	<script type="text/javascript" src="//use.typekit.net/our3dxe.js"></script>
+	<script type="text/javascript" src="//use.typekit.net/fmu6wlr.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	
+	<!--Favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico">
+
     <!-- Wordpress head function -->
     <?php wp_head(); ?>
   </head>
@@ -71,15 +75,7 @@
 	</div>
 
 	<!-- Welcome -->
-	<div class="u-gridRow">
-		<div class="Welcome">
-			<h1 class="Welcome-title">Welkom op de website van Rijschool Compleet</h1>
-			<p class="Welcome-text">
-				Rijschool compleet is een rijschool met 10 jaar ervaring, en rijdt in de omgeving 
-				Waddinxveen. <br/> U kunt bij ons terecht voor autorijlessen, autorijlessen met aahangwagen, en motorrijlessen.
-			</p>
-		</div>
-	</div>
+	
 
 
 

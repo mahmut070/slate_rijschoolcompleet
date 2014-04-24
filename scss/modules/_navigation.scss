@@ -7,6 +7,7 @@
  
 .Navigation {
   text-align: right;
+
 }
 
 // -------------------------------------
@@ -20,11 +21,13 @@
 // -------------------------------------
 
 // -------------------------------------
-// States
+// States 
 // -------------------------------------
 
 .Navigation-link.is-active {
-  text-decoration: underline;
+  // text-decoration: underline;
+  color: $c-brightyellow;
+
 }
 
 // -------------------------------------
@@ -70,11 +73,13 @@
 
 // ----- Navigation link ----- //
 .Navigation-link {
+  
   //text-transform: uppercase;
   font-family: $t-headerFontFamily;
   color: $c-white;
   font-size: rem(16px);
   line-height: 1.5;  
+
 
   &:hover {
     text-decoration: none;
@@ -83,7 +88,10 @@
 
 .Navigation-link--invertedBold {
   color: $c-white; 
-  //font-weight: bold;
 }
 
+a.Navigation-link{
+  padding: 10px 10px;
+  text-decoration: none;
+}
 

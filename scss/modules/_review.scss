@@ -1,0 +1,23 @@
+// *************************************
+//
+// Review
+// -> Reviews
+//
+// *************************************
+
+.Review {
+	//@include row();
+	padding-bottom: 20px;
+	background-color: $c-purple;
+}
+
+.Review-item{
+  	@extend .u-gridColumn4;
+
+  	@media screen and (max-width: 455px){
+  		@include span-columns(12);
+  	}
+}
+
+
+

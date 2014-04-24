@@ -44,12 +44,24 @@
 .u-gridColumn3 {
 	@include span-columns(3);
 }
+
+.u-gridColumn4 {
+  @include span-columns(4);
+  @media screen and (max-width: 980px){
+      @include span-columns(12);
+    }
+}
 .u-gridColumn6 {
 	@include span-columns(6);
+  @media screen and (max-width: 980px){
+      @include span-columns(12);
+    }
 }
 .u-gridColumn9 {
 	@include span-columns(9);
 }
+
+
 
 // -------------------------------------
 // Text //
@@ -106,4 +118,33 @@
   display: table-cell;
   width: 50%;
 }
+
+
+.u-sectionHeadingWhite {
+  display: table;
+  white-space: nowrap;
+}
+
+.u-sectionHeadingWhite:before {
+  @include linear-gradient(to bottom, white, white);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 95% 1px;
+  background-color: transparent;
+  content: "";
+  display: table-cell;
+  width: 50%;
+}
+
+.u-sectionHeadingWhite:after {
+  @include linear-gradient(white, white);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 95% 1px;
+  background-color: transparent;
+  content: "";
+  display: table-cell;
+  width: 50%;
+}
+
 

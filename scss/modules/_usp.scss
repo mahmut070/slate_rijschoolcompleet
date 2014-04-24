@@ -1,0 +1,56 @@
+// *************************************
+//
+// Usp
+// -> Unique Selling Points
+//
+// *************************************
+
+.Usp {
+	@include span-columns(4);
+	float:right;
+	margin-top: 9px;
+	padding: 1em;
+	padding-top: 0;
+	background-color: $c-darkgrey;
+	color: $c-white;
+	margin-top: 202px;
+
+	@media screen and (max-width: 980px) {
+		@include span-columns(3);
+		border-top-right-radius:0;
+		margin-top: 0px;
+
+  	}
+}
+
+.Usp-text{
+	padding-left: 33px;
+	margin-top: 0;
+	margin-bottom: 0;
+
+	@media screen and (max-width: 980px) {
+	padding-left: 0px;
+	}
+}
+
+li.icon::before {
+	content: "";
+	display: inline-block;
+	height: 1em;
+	width: 1em;
+	vertical-align: middle;
+	padding-bottom: 0.2em;
+	margin-right: 0.5em;
+	background-repeat: no-repeat;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;	
+	box-sizing: border-box;		
+}
+
+li.check::before { 
+	background-image: url('/files/2014/04/check.png');
+	height: 1.3em;
+	width: 1.3em;
+}
+

@@ -3,20 +3,30 @@
 }
 
 .Footer-inner {
-	h4, p {
-		color: white;
-	}
-}
-
-.Footer-inner {
 
 }
 
 .Footer-inner .widget {
-	@include span-columns(6);
+	@include span-columns(4);
+//	text-align: center;
 }
 
 .Footer-socket {
-	background-color: $c-darkgrey;
+	background-color: $c-grey;
 	color: white;
+}
+
+.Footer-title{
+	color:red;
+}
+
+.widget{
+	h4{
+	color:$c-yellow;
+	font-size: rem(20px);
+	}
+
+	p {
+		color: white;
+	}
 }
