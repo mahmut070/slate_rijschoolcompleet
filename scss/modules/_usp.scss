@@ -8,18 +8,35 @@
 .Usp {
 	@include span-columns(4);
 	float:right;
-	margin-top: 9px;
+	border-top-right-radius: 25px;
+
+	margin-top: 5px;
 	padding: 1em;
 	padding-top: 0;
 	background-color: $c-darkgrey;
 	color: $c-white;
-	margin-top: 202px;
-
 	@media screen and (max-width: 980px) {
-		@include span-columns(3);
-		border-top-right-radius:0;
+		width: 100%;
 		margin-top: 0px;
+		border-top-right-radius: 0px;
+		font-size: rem(20px);
 
+  	}
+}
+
+.Usp-col {
+	@include span-columns(4);
+	float:right;
+	border-top-right-radius: 25px;
+
+	padding: 1em;
+	padding-top: 0;
+	background-color: $c-darkgrey;
+	color: $c-white;
+	@media screen and (max-width: 980px) {
+		width: 100%;
+		margin-top: 0px;
+		font-size: rem(20px);
   	}
 }
 
@@ -27,11 +44,17 @@
 	padding-left: 33px;
 	margin-top: 0;
 	margin-bottom: 0;
+	font-size: rem(20px);
+
 
 	@media screen and (max-width: 980px) {
 	padding-left: 0px;
+	font-size: rem(20px);
 	}
 }
+
+
+
 
 li.icon::before {
 	content: "";

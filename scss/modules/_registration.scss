@@ -1,0 +1,8 @@
+.Registration{
+	margin-right: auto;
+	margin-left: auto;
+	@include span-columns(6);
+		@media screen and(max-width: 600px){
+			@include span-columns(12);
+		}
+}

@@ -43,6 +43,9 @@
 
 .u-gridColumn3 {
 	@include span-columns(3);
+    @media screen and (max-width: 980px){
+      @include span-columns(12);
+    }
 }
 
 .u-gridColumn4 {
@@ -57,8 +60,23 @@
       @include span-columns(12);
     }
 }
+.u-gridColumn5 {
+  @include span-columns(5);
+}
+
+.u-gridColumn7 {
+  @include span-columns(7);
+  @media screen and (max-width: 980px){
+      @include span-columns(12);
+    }
+}
+
 .u-gridColumn9 {
 	@include span-columns(9);
+}
+
+.u-gridColumn10 {
+  @include span-columns(10);
 }
 
 
@@ -145,6 +163,14 @@
   content: "";
   display: table-cell;
   width: 50%;
+}
+
+.alignright {
+  float: right;
+}
+
+.alignleft {
+  float: left;
 }
 
 

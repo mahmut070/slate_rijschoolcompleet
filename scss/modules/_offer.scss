@@ -27,6 +27,12 @@
 .Offer-item img {
 	display: block;
 	margin: 0 auto;
-	height: 250px;
+	max-height: 250px;
+	width: 100%;
+}
+
+.Offer-item-cadeau{
+	margin-top: 122px;
+	
 }
 

@@ -26,6 +26,64 @@
   background-color: $c-darkgrey;
   color: $c-white;
 } 
+
+.Button--registration{
+	margin-top: 114px;
+	margin-bottom: 5px;
+	background-color: $c-yellow;
+	color: $c-darkgrey;
+	font-size: rem(25px);
+	float: right;
+	width: 333px;
+	text-align: center;
+	border-bottom-right-radius: 25px;
+
+	cursor: pointer;
+  -webkit-duration: .3s;
+  -moz-duration: .3s;
+  -o-duration: .3s;
+  transition-duration: .3s;
+
+  &:hover{
+    // background: $c-lightyellow;
+   background: rgba($c-yellow, 0.4);
+   }
+
+   @media screen and (max-width: 980px) {
+   	float: none;
+   	margin-top: 0;
+   	width: 100%;
+   }
+}
+
+.Button--home{
+	margin-top: 43px;
+	margin-bottom: 5px;
+	background-color: $c-yellow;
+	color: $c-darkgrey;
+	font-size: rem(25px);
+	float: right;
+	width: 333px;
+	text-align: center;
+	border-bottom-right-radius: 25px;
+
+	cursor: pointer;
+  -webkit-duration: .3s;
+  -moz-duration: .3s;
+  -o-duration: .3s;
+  transition-duration: .3s;
+
+  &:hover{
+    // background: $c-lightyellow;
+   background: rgba($c-yellow, 0.4);
+   }
+
+   @media screen and (max-width: 980px) {
+   	float: none;
+   	margin-top: 0;
+   	width: 100%;
+   }
+}
  
 // -------------------------------------
 // States

@@ -1,9 +1,13 @@
 <?php
 /*
-Template Name: Opleidingen template
+Template Name: Cadeaubon template
 */
 ?>
 <?php get_header(); ?>
+
+	
+
+ 
 	<div class="u-gridRow Content-wrap">
 		<div class="u-gridContainer">
 			<div class="u-gridColumn6">
@@ -20,20 +24,10 @@ Template Name: Opleidingen template
 			<?php endwhile; endif; ?>
 			</div>   
 
-			<div class="Usp u-gridColumn4 ">
-				<p>Nog even de voordelen op een rijtje:</p>
-				<ul class="Usp-list">
-					<li class="icon check"> Hoog slagingspercentage (81%-85 %)</li>
-					<li class="icon check"> Hoge mate van kwaliteit</li>
-					<li class="icon check"> Maatwerk</li>
-					<li class="icon check"> Inzicht in de vorderingen</li>
-					<p class="Usp-text">van de cursist</p>
-					<li class="icon check"> Goede prijs-kwaliteitsverhouding</li>
-					<li class="icon check"> Cursisten krijgen het praktijkboek </li>
-					<p class="Usp-text">'Rijopleiding In Stappen'</p>
-					<li class="icon check"> Een goede service</li>
-				</ul>
-			</div>
+				<div class="Offer-item-cadeau">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cadeaubonrijschoolcompleet.jpg" />
+				</div>
+			
 
 		</div>
 	</div>

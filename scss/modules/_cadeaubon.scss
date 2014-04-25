@@ -1,0 +1,12 @@
+.Cadeaubon{
+	margin-top: 122px;
+	margin-left: 22px;
+	width: 500px;
+	height: 226px;
+	display: block;
+
+	@media screen and (max-width: 980px){
+		width: 50%;
+	}
+
+}

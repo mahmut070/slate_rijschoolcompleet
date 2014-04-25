@@ -17,7 +17,7 @@ Template Name: Homepage
 	<!-- Offer -->
 	<div class="Offer">
 		<div class="u-gridContainer">
-			<h2 class="Offer-heading u-section Heading">Aanbiedingen</h2>
+			<h2 class="Offer-heading u-sectionHeading">Aanbiedingen</h2>
 			<div class="Offer-item">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cashback.svg" />
 				<a class="Button Button--offer" href="#">Uitleg en meer acties
@@ -25,7 +25,7 @@ Template Name: Homepage
 			</div>
 			<div class="Offer-item">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cadeaubon.png" />
-				<a class="Button Button--offer" href="#">Meer informatie
+				<a class="Button Button--offer" href="/cadeaubon">Meer informatie
 				</a>
 			</div>
 		</div>
@@ -46,9 +46,11 @@ Template Name: Homepage
 				</article>
 			<?php endwhile; endif; ?>
 			</div>   
-
+			<div>
+				<a class="Button Button--home" href="#"><strong>Meld je nu aan</strong></a>
+			</div> 
 			<div class="Usp u-gridColumn4 ">
-				<p>Nog even de voordelen op een rijtje:</p>
+				<p class="Usp-text">Nog even de voordelen op een rijtje:</p>
 				<ul class="Usp-list">
 					<li class="icon check"> Hoog slagingspercentage (81%-85 %)</li>
 					<li class="icon check"> Hoge mate van kwaliteit</li>
