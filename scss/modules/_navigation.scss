@@ -14,7 +14,7 @@
 // Module specific variables
 // -------------------------------------
 
-// Module-variableName
+$nav-breakpoint: 600px;
 
 // -------------------------------------
 // Modifiers
@@ -69,6 +69,10 @@
   &:hover {
     background-color: $c-purple;
   }
+  @media screen and (max-width: $nav-breakpoint) {
+    display: block;
+    border: 1px solid $c-white;
+  }
 }
 
 // ----- Navigation link ----- //
@@ -93,5 +97,21 @@
 a.Navigation-link{
   padding: 10px 10px;
   text-decoration: none;
+}
+
+.Navigation-list--parent {
+  display: none;
+  @media screen and (min-width : $nav-breakpoint) {
+    display: block;
+  }
+}
+
+.Navigation-menuToggle {
+  
+  
+  display: block;
+  @media screen and (min-width : $nav-breakpoint) {
+    display: none;
+  }
 }
 

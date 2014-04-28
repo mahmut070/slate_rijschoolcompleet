@@ -20,7 +20,7 @@ Template Name: Homepage
 			<h2 class="Offer-heading u-sectionHeading">Aanbiedingen</h2>
 			<div class="Offer-item">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cashback.svg" />
-				<a class="Button Button--offer" href="#">Uitleg en meer acties
+				<a class="Button Button--offer" href="/cashback">Uitleg en meer acties
 				</a>
 			</div>
 			<div class="Offer-item">

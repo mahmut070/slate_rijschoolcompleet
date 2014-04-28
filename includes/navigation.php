@@ -5,6 +5,6 @@ wp_nav_menu(array(
     'container_class' =>'Navigation',
     'menu_class' => '',
     'theme_location' => 'main-nav',
-    'items_wrap' => '<ul id="%1$s" class="%2$s c-shout c-thick">%3$s</ul>',
+    'items_wrap' => '<ul id="%1$s" class="Navigation-list--parent %2$s c-shout c-thick">%3$s</ul>',
     'walker' => new Slate_Walker_Nav_Menu()
 )); ?>

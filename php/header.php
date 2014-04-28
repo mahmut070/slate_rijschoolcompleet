@@ -36,6 +36,16 @@
 	<!--Favicon-->
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico">
 
+	<!--AppIon-->
+    <link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/img/app-icon.png"/>  
+    <link rel="apple-touch-startup-image" href="<?php echo get_stylesheet_directory_uri(); ?>/img/app-icon.png" /> 
+
+	<!--GoogleMaps-->
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+
+
+
     <!-- Wordpress head function -->
     <?php wp_head(); ?>
   </head>
@@ -46,6 +56,7 @@
 	<div class="Navigation-wrap ">
 		<div class="u-gridContainer">
 			<?php include 'includes/navigation.php'; ?>
+			<a class="Navigation-menuToggle" id="js-menuToggle">Menu</a>
 		</div>
 	</div>
 
@@ -57,11 +68,13 @@
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" />
 				</div> 
 				<div class="Logobar-social u-objRight">
-		          <svg class="Icon Icon--standalone" viewBox="0 0 128 128"><use xlink:href="#icon-facebook2"></use></svg>
+		          <a href="https://www.facebook.com/rijschool.compleet"><svg class="Icon Icon--standalone" viewBox="0 0 128 128"><use xlink:href="#icon-facebook2"></use></svg></a>
 				</div> 
 			</div>
 		</div>
 	</div>
+
+
 	<!-- Slider -->
 	<div class="u-gridRow">
 		<div class="Slider">
