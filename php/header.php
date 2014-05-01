@@ -67,13 +67,18 @@
 				<div class="Logobar-image u-objLeft">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" />
 				</div> 
+				<div>
+
+				<a class="Button Button--header" href="#"><strong>Meld je nu aan</strong></a>
+				</div> 
+
 				<div class="Logobar-social u-objRight">
 		          <a href="https://www.facebook.com/rijschool.compleet"><svg class="Icon Icon--standalone" viewBox="0 0 128 128"><use xlink:href="#icon-facebook2"></use></svg></a>
 				</div> 
 			</div>
 		</div>
 	</div>
-
+			
 
 	<!-- Slider -->
 	<div class="u-gridRow">

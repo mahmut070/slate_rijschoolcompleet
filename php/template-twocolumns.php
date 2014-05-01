@@ -18,14 +18,23 @@ Template Name: Two column template
 						<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 					</div>
 				</article>
+				
+				<section class="Comments">
+				<?php if(is_page('gastenboek') || is_page('referenties')) { comments_template(); } ?>
+				</section>
 			<?php endwhile; endif; ?>
 			</div> 
 
 			<div>
 				<a class="Button Button--registration" href="/aanmelden"><strong>Meld je nu aan</strong></a>
 			</div> 
+
+
 				
 				<div class="Usp-col u-gridColumn4 ">
+					<div class="Contactbar-form">
+					<?php echo do_shortcode('[gravityform id="1" name="Contact" title="false"]'); ?>
+					</div>
 				
 				<p class="Usp-text">Nog even de voordelen op een rijtje:</p>
 				<ul class="Usp-list">
@@ -39,6 +48,8 @@ Template Name: Two column template
 				<p class="Usp-text">'Rijopleiding In Stappen'</p>
 					<li class="icon check"> Een goede service</li>
 				</ul>
+
+
 			</div>
 			
 		</div>

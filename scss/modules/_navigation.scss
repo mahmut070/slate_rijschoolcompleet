@@ -59,11 +59,12 @@ $nav-breakpoint: 600px;
   &:last-of-type {
     margin-right: 0;
   }
-  border-right: 1px solid $c-white;
+  border-right: 1px solid rgba($c-yellow, 0.4);
+
   padding: 0.7rem 1rem;
 
   &:first-of-type {
-    border-left: 1px solid $c-white;
+    border-left: 1px solid rgba($c-yellow, 0.4);
   }
 
   &:hover {

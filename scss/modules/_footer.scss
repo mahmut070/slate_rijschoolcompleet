@@ -1,5 +1,6 @@
 .Footer {
 	background-color: $c-darkgrey;
+	color: black;
 }
 
 .Footer-inner {
@@ -7,6 +8,8 @@
 }
 
 .Footer-inner .widget {
+	margin: 0;
+
 	@include span-columns(4);
 //	text-align: center;
 }
@@ -24,9 +27,12 @@
 	h4{
 	color:$c-yellow;
 	font-size: rem(20px);
+	margin: 0;
+	
 	}
 
 	p {
 		color: white;
 	}
 }
+

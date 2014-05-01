@@ -5,7 +5,7 @@ Template Name: Homepage
 ?>
 <?php get_header(); ?>
 	
-	<div class="u-gridRow">
+	<!-- <div class="u-gridRow">
 		<div class="Welcome">
 			<h1 class="Welcome-title">Welkom op de website van Rijschool Compleet</h1>
 			<p class="Welcome-text">
@@ -13,24 +13,37 @@ Template Name: Homepage
 				Waddinxveen. <br/> U kunt bij ons terecht voor autorijlessen, autorijlessen met aahangwagen, en motorrijlessen.
 			</p>
 		</div>
-	</div>
+	</div> -->
+
 	<!-- Offer -->
-	<div class="Offer">
-		<div class="u-gridContainer">
-			<h2 class="Offer-heading u-sectionHeading">Aanbiedingen</h2>
-			<div class="Offer-item">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cashback.svg" />
-				<a class="Button Button--offer" href="/cashback">Uitleg en meer acties
-				</a>
+	<div class="Offer-wrap">
+		<div class="Offer">
+			<div class="u-gridContainer">
+				<h2 class="Offer-heading u-sectionHeading">Aanbiedingen</h2>
+				<?php
+					$args = array(
+						'post_type' => 'aanbieding',
+					);
+					$aanbiedingen = new WP_Query( $args );
+					if( $aanbiedingen->have_posts() ) {
+						while( $aanbiedingen->have_posts() ) {
+							$aanbiedingen->the_post();
+							?>
+								<div class="Offer-item">
+									<?php the_post_thumbnail(); ?>
+									<a class="Button Button--offer" href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
+								</div>
+
+							<?php
+						}
+					}
+					else {
+						echo '<p>Er zijn momenteel geen aanbiedingen';
+					}
+				?>
 			</div>
-			<div class="Offer-item">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cadeaubon.png" />
-				<a class="Button Button--offer" href="/cadeaubon">Meer informatie
-				</a>
-			</div>
-		</div>
-	</div>  
- 
+		</div>  
+ 	</div>
 	<div class="u-gridRow Content-wrap">
 		<div class="u-gridContainer">
 			<div class="Content u-gridColumn6">
@@ -46,23 +59,29 @@ Template Name: Homepage
 				</article>
 			<?php endwhile; endif; ?>
 			</div>   
+
 			<div>
 				<a class="Button Button--home" href="#"><strong>Meld je nu aan</strong></a>
 			</div> 
-			<div class="Usp u-gridColumn4 ">
-				<p class="Usp-text">Nog even de voordelen op een rijtje:</p>
-				<ul class="Usp-list">
-					<li class="icon check"> Hoog slagingspercentage (81%-85 %)</li>
-					<li class="icon check"> Hoge mate van kwaliteit</li>
-					<li class="icon check"> Maatwerk</li>
-					<li class="icon check"> Inzicht in de vorderingen</li>
-					<p class="Usp-text">van de cursist</p>
-					<li class="icon check"> Goede prijs-kwaliteitsverhouding</li>
-					<li class="icon check"> Cursisten krijgen het praktijkboek </li>
-					<p class="Usp-text">'Rijopleiding In Stappen'</p>
-					<li class="icon check"> Een goede service</li>
-				</ul>
-			</div>
+
+			<div class="Usp-col u-gridColumn4 ">
+					<div class="Contactbar-form">
+						<?php echo do_shortcode('[gravityform id="1" name="Contact" title="false"]'); ?>
+					</div>
+						<p class="Usp-text">Nog even de voordelen op een rijtje:</p>
+						<ul class="Usp-list">
+							<li class="icon check"> Hoog slagingspercentage (81%-85 %)</li>
+							<li class="icon check"> Hoge mate van kwaliteit</li>
+							<li class="icon check"> Maatwerk</li>
+							<li class="icon check"> Inzicht in de vorderingen</li>
+							<p class="Usp-text">van de cursist</p>
+							<li class="icon check"> Goede prijs-kwaliteitsverhouding</li>
+							<li class="icon check"> Cursisten krijgen het praktijkboek </li>
+							<p class="Usp-text">'Rijopleiding In Stappen'</p>
+							<li class="icon check"> Een goede service</li>
+						</ul>
+					</div>
+				</div>
 
 		</div>
 	</div>
@@ -70,18 +89,41 @@ Template Name: Homepage
 	<div class="Review">
 		<div class="u-gridContainer">
 			<h2 class="Review-heading u-sectionHeadingWhite">Recensies</h2>
-			<div class="u-gridRow">
-				<div class="Review-item">
-					<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit onsectetur adipisicing elit</p></blockquote>
-				</div>
-				<div class="Review-item">
-					<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit onsectetur adipisicing elit</p></blockquote>
-				</div>
-				<div class="Review-item">
-					<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit onsectetur adipisicing elit</p></blockquote>
-				</div>
-			</div>
+
+				<?php
+				$args = array(
+					// args here
+					'number'       => '3',
+					'order'        => 'ASC',
+
+					);
+
+					// The Query
+				$referenties_query = new WP_Comment_Query;
+				$referenties = $referenties_query->query( $args );
+
+					// Comment Loop
+				if ( $referenties ) {
+					foreach ( $referenties as $referenties ) {
+						?>
+						<div class="Review-item"><blockquote>
+							<?php echo '<p>' . substr($referenties->comment_content, 0, 150) . '...</p>'; ?><br><br>
+							<?php echo '<p>' . $referenties->comment_date . '</p>'; ?><br>
+							<p>geschreven door &nbsp</p><?php echo '<p>'  . $referenties->comment_author  . '</p>'; ?>
+						</blockquote>
+						</div>
+
+						<?php
+					}
+				} else {
+					echo 'Geen referenties beschikbaar.';
+				}
+				?>
+
 		</div>
+						<a class="Button Button--review" href="/gastenboek">Bekijk meer recensies</a>
+
+
 	</div>
 
 
