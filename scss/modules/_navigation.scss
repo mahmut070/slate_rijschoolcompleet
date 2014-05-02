@@ -6,7 +6,7 @@
 // *************************************
  
 .Navigation {
-  text-align: right;
+  // text-align: right;
 
 }
 
@@ -14,7 +14,7 @@
 // Module specific variables
 // -------------------------------------
 
-$nav-breakpoint: 600px;
+$nav-breakpoint: 780px;
 
 // -------------------------------------
 // Modifiers
@@ -91,12 +91,12 @@ $nav-breakpoint: 600px;
   }
 }
 
-.Navigation-link--invertedBold {
+.Navigation-link--invertedBold { 
   color: $c-white; 
 }
 
 a.Navigation-link{
-  padding: 10px 10px;
+  padding: 13px 13px;
   text-decoration: none;
 }
 
@@ -113,6 +113,15 @@ a.Navigation-link{
   display: block;
   @media screen and (min-width : $nav-breakpoint) {
     display: none;
+  color: red;
   }
 }
 
+#js-menuToggle{
+    fill: blue;
+
+}
+
+.Navigation-list.is-hidden {
+    display: none;
+}

@@ -6,6 +6,9 @@
 
 .Logobar-social {
 	padding-top: rem(20px);
+	  	@media screen and (max-width: 780px) {
+			display:none;
+		}	
 }
 
 .Logobar-image {

@@ -9,6 +9,12 @@
 	@include row();
 	padding-bottom: 20px;
 	background-color: $c-yellow;
+
+	.bx-viewport {
+	    background-color: inherit;
+	    border: none;
+	    box-shadow: none;
+	}
 }
 
 .Offer-heading {
@@ -20,6 +26,7 @@
 .Offer-item {
 	@include span-columns(6);
 	text-align: center;
+	padding-bottom: 50px;
 	//height: rem(250px);
 	
 
@@ -28,17 +35,10 @@
 .Offer-item img {
 	display: inline-block;
 	// max-height: 150px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 
 
 }
 
-.Offer-item-cadeau{
-	// margin-top: 122px;
-	
-}
 
-// .Offer-wrap{
-// 	height:1
-// }
 

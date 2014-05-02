@@ -53,10 +53,11 @@
 	<?php include_once('ico/sprites.svg'); ?>
 	
 	<!-- Navigation -->
-	<div class="Navigation-wrap ">
+	<div class="Navigation-wrap dropdown">
 		<div class="u-gridContainer">
 			<?php include 'includes/navigation.php'; ?>
-			<a class="Navigation-menuToggle" id="js-menuToggle">Menu</a>
+			<a class="Navigation-menuToggle" id="js-menuToggle"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-icon.png"></a>
+			
 		</div>
 	</div>
 
@@ -69,7 +70,7 @@
 				</div> 
 				<div>
 
-				<a class="Button Button--header" href="#"><strong>Meld je nu aan</strong></a>
+				<a class="Button Button--header" href="/aanmelden"><strong>Meld je nu aan</strong></a>
 				</div> 
 
 				<div class="Logobar-social u-objRight">

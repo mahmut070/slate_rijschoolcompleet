@@ -20,6 +20,7 @@ Template Name: Homepage
 		<div class="Offer">
 			<div class="u-gridContainer">
 				<h2 class="Offer-heading u-sectionHeading">Aanbiedingen</h2>
+				<ul class="Offer-slider bxslider">
 				<?php
 					$args = array(
 						'post_type' => 'aanbieding',
@@ -89,44 +90,60 @@ Template Name: Homepage
 	<div class="Review">
 		<div class="u-gridContainer">
 			<h2 class="Review-heading u-sectionHeadingWhite">Recensies</h2>
+				<ul class="bxslider">
+					<?php
+					$args = array(
+						// args here
+						'number'       => '16',
+						'order'        => 'ASC',
 
-				<?php
-				$args = array(
-					// args here
-					'number'       => '3',
-					'order'        => 'ASC',
+						);
 
-					);
+						// The Query
+					$referenties_query = new WP_Comment_Query;
+					$referenties = $referenties_query->query( $args );
 
-					// The Query
-				$referenties_query = new WP_Comment_Query;
-				$referenties = $referenties_query->query( $args );
+						// Comment Loop
+					if ( $referenties ) {
 
-					// Comment Loop
-				if ( $referenties ) {
-					foreach ( $referenties as $referenties ) {
-						?>
-						<div class="Review-item"><blockquote>
-							<?php echo '<p>' . substr($referenties->comment_content, 0, 150) . '...</p>'; ?><br><br>
-							<?php echo '<p>' . $referenties->comment_date . '</p>'; ?><br>
-							<p>geschreven door &nbsp</p><?php echo '<p>'  . $referenties->comment_author  . '</p>'; ?>
-						</blockquote>
-						</div>
+						foreach ( $referenties as $referenties ) {
+							?>
+							<li class="Review-item">
+								<blockquote>
+									<?php echo '<p>' . substr($referenties->comment_content, 0, 150) . '...</p>'; ?><br><br>
+									<?php //echo '<p>' . $referenties->comment_date . '</p>'; ?><br>
+									<p>geschreven door &nbsp</p><?php echo '<p>'  . $referenties->comment_author  . '</p>'; ?>
+								</blockquote>
+							</li>
 
-						<?php
+							<?php
+						}
+					} else {
+						echo 'Geen referenties beschikbaar.';
 					}
-				} else {
-					echo 'Geen referenties beschikbaar.';
-				}
-				?>
+					?>
+				</ul>
 
 		</div>
 						<a class="Button Button--review" href="/gastenboek">Bekijk meer recensies</a>
 
 
 	</div>
+ 	<!--
+	<ul class="bxslider">
+		<li><img src="http://placekitten.com/200/300" /></li>
+		<li><img src="http://placekitten.com/200/300" /></li>
+		<li><img src="http://placekitten.com/200/300" /></li>
+		<li><img src="http://placekitten.com/200/300" /></li>
+		<li><img src="http://placekitten.com/200/300" /></li>
+		<li><img src="http://placekitten.com/200/300" /></li>
+		<li><img src="http://placekitten.com/200/300" /></li>
+		<li><img src="http://placekitten.com/200/300" /></li>
+		<li><img src="http://placekitten.com/200/300" /></li>
 
+	</ul>
 
+	-->
 
 
 <?php get_footer(); ?>

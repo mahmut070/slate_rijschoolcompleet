@@ -115,6 +115,7 @@
   &:hover{
     // background: $c-lightyellow;
    background: rgba($c-yellow, 0.4);
+   color: $c-white;
    }
 
    @media screen and (max-width: 980px) {

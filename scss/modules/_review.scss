@@ -9,15 +9,30 @@
 	//@include row();
 	padding-bottom: 20px;
 	background-color: $c-purple;
+	
+	.bx-viewport {
+	    background-color: inherit;
+	    border: none;
+	    box-shadow: none;
+	}
+	
+
 }
 
+.Review .bxslider {
+	background-color: $c-purple;
+}
 .Review-item{
-  	@extend .u-gridColumn4;
-
+  	//@extend .u-gridColumn4;
+	background-color: inherit;
   	@media screen and (max-width: 455px){
-  		@include span-columns(12);
+  	//	@include span-columns(12);
   	}
 }
+
+
+
+
 
 
 
