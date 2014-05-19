@@ -26,13 +26,14 @@
 
 .Usp-col {
 	@include span-columns(4);
+	margin-top: 43px;	
 	float:right;
 	border-top-right-radius: 25px;
-
+	border: 1px solid $c-darkgrey;
 	padding: 1em;
 	padding-top: 0;
-	background-color: $c-darkgrey;
-	color: $c-white;
+	// background-color: $c-darkgrey;
+	color: $c-darkgrey;
 	@media screen and (max-width: 980px) {
 		width: 100%;
 		margin-top: 0px;
@@ -40,11 +41,13 @@
   	}
 }
 
+
+
 .Usp-text{
 	padding-left: 33px;
 	margin-top: 0;
 	margin-bottom: 0;
-	font-size: rem(20px);
+	font-size: rem(16px);
 
 
 	@media screen and (max-width: 980px) {

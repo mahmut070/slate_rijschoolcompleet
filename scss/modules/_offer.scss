@@ -7,7 +7,8 @@
 
 .Offer {
 	@include row();
-	padding-bottom: 20px;
+	// max-height: 505px;
+	max-height: 275px;
 	background-color: $c-yellow;
 
 	.bx-viewport {
@@ -20,13 +21,15 @@
 .Offer-heading {
 	//text-align: center;
 	color: $c-darkgrey;
+	margin-top: 15px;
+	margin:0;
 }
 
 
 .Offer-item {
 	@include span-columns(6);
 	text-align: center;
-	padding-bottom: 50px;
+	// padding-bottom: 50px;
 	//height: rem(250px);
 	
 
@@ -35,10 +38,21 @@
 .Offer-item img {
 	display: inline-block;
 	// max-height: 150px;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 
 
 }
+
+// div.Offer-item:nth-child(6) > img:nth-child(1){
+// 	height: 262px;
+// 	width: 405px; 
+// }
+
+.u-sectionHeadingWhite{
+	margin:0;
+}
+
+
 
 
 

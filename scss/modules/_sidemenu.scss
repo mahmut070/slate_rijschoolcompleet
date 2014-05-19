@@ -1,0 +1,54 @@
+// *************************************
+//
+// Sidemenu
+// 
+//
+// *************************************
+ 
+.Side-menu-wrap {
+  background-color: $c-darkgrey;
+  padding: 0;
+
+  .Navigation-listItem--hasDropdown{
+  position: relative;
+  color: red; 
+  }
+
+  .Navigation-listItem{
+    letter-spacing:2.5px;
+    font-size: rem(16px);
+    padding-left: 0;
+    display: block;
+    border: none;
+    cursor:pointer;
+
+     &:first-of-type {
+    margin-top: 15px;
+    border-top-right-radius: 25px;
+    }
+  }
+  .Navigation-link {
+    display: block;
+    padding: 10px 20px;
+    cursor: pointer;
+    -webkit-duration: .2s;
+    -moz-duration: .2s;
+    -o-duration: .2s;
+    transition-duration: .2s;
+
+    &:hover{
+    // background: $c-lightyellow;
+    background: rgba($c-purple, 0.8);
+    }
+  }
+
+}
+
+
+
+.Navigation-list--parent .Navigation-list .Navigation-listItem {
+    margin-left: 20px;
+    .Navigation-link {
+      color: $c-yellow;
+    }
+}

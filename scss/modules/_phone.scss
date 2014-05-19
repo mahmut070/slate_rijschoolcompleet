@@ -1,0 +1,75 @@
+.Phone{
+  color: #4B729E;
+	margin-top: 31px;
+	// padding-right: 5.3em;
+	text-decoration: none;
+
+  @media screen and (max-width: 960px) {
+  
+    margin-top:0;
+
+    
+  }
+}
+
+.u-objRight.Phone{
+  color: #4B729E;
+
+  @media screen and (max-width: 980px) {
+  
+    float:left;
+    margin-left: 1.1em;
+    margin-top: 0;
+ 
+  }
+}
+
+.Phone-nr{
+  color: #4B729E;
+  font-family: $t-headerFontFamily;
+	font-size: 2em;
+	display: block;
+  line-height: 1;
+	letter-spacing: 0.2em;
+
+	text-align: center;
+  vertical-align: center;
+  margin: auto;
+  
+  cursor: pointer;
+  -webkit-duration: .3s;
+  -moz-duration: .3s;
+  -o-duration: .3s;
+  transition-duration: .3s;
+
+  &:hover{
+    color: $c-white;
+  // border-radius: 30%;
+   }
+}
+.Phone-nr2{
+  color: $c-white;
+  font-family: $t-headerFontFamily;
+  font-size: rem(20px);
+  // display: block;
+    line-height: 1;
+  letter-spacing: 0.2em;
+
+  text-align: center;
+  vertical-align: center;
+  margin: auto;
+  
+  cursor: pointer;
+  -webkit-duration: .3s;
+  -moz-duration: .3s;
+  -o-duration: .3s;
+  transition-duration: .3s;
+
+  &:hover{
+    color: $c-white;
+    text-decoration: none;
+  // border-radius: 30%;
+   
+  } 
+
+}

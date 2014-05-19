@@ -20,18 +20,19 @@ Template Name: Two column template
 				</article>
 				
 				<section class="Comments">
-				<?php if(is_page('gastenboek') || is_page('referenties')) { comments_template(); } ?>
+				<?php if(is_page('recensies') || is_page('recensies')) { comments_template(); } ?>
 				</section>
 			<?php endwhile; endif; ?>
-			</div> 
+			</div>  
 
-			<div>
-				<a class="Button Button--registration" href="/aanmelden"><strong>Meld je nu aan</strong></a>
-			</div> 
+			
 
 
 				
 				<div class="Usp-col u-gridColumn4 ">
+					<div>
+						<a class="Button Button--registration" href="/aanmelden"><strong>Meld je nu aan</strong></a>
+					</div> 
 					<div class="Contactbar-form">
 					<?php echo do_shortcode('[gravityform id="1" name="Contact" title="false"]'); ?>
 					</div>

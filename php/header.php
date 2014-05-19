@@ -50,6 +50,7 @@
     <?php wp_head(); ?>
   </head>
 <body <?php body_class(); ?> >
+	<div id="fb-root"></div>
 	<?php include_once('ico/sprites.svg'); ?>
 	
 	<!-- Navigation -->
@@ -66,12 +67,20 @@
 		<div class="u-gridContainer">
 			<div class="Logobar u-cf">
 				<div class="Logobar-image u-objLeft">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" />
+					<a href="/home/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" /></a>
 				</div> 
 				<div>
+					<a class="Button Button--header" href="/aanmelden"><strong>Meld je nu aan</strong></a>
 
-				<a class="Button Button--header" href="/aanmelden"><strong>Meld je nu aan</strong></a>
 				</div> 
+				<div>
+					<a class="Button Button--phone" href="tel:0180-394444">06 28408410</a>
+
+				</div> 
+
+				<!-- <div>
+					<a class="Button Button--cbr" href="tel:0180-394444">06 28408410</a>
+				</div>  -->
 
 				<div class="Logobar-social u-objRight">
 		          <a href="https://www.facebook.com/rijschool.compleet"><svg class="Icon Icon--standalone" viewBox="0 0 128 128"><use xlink:href="#icon-facebook2"></use></svg></a>
@@ -79,16 +88,51 @@
 			</div>
 		</div>
 	</div>
-			
+	
 
 	<!-- Slider -->
-	<div class="u-gridRow">
+	<div class="u-u-gridColumn">
+
 		<div class="Slider">
-			<div class="Slider-frame">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slider.jpg" />
-				<div class="Slider-slogan">
-					<h5 class="Slider-heading">Hoogste slagingspercentage in de regio!</h5>
-				</div>
+
+			<!-- http://www.rijschoolgegevens.nl/index.asp?pageid=2&examenplaats=45&automaat=&gemeente=4813 -->
+			<ul class="Slider-slider bxslider">		
+			<?php
+					$args = array(
+						'post_type' => 'slider',
+					);
+					$slider = new WP_Query( $args );
+					if( $slider->have_posts() ) {
+						while( $slider->have_posts() ) {
+							$slider->the_post();
+							?>
+								<div class="Slider-item">
+
+									<?php the_post_thumbnail(); ?>
+									<div class="Slider-slogan">
+
+									<!-- <h5 class="Slider-heading">Hoogste slagingspercentage in de regio!</h5> -->
+										<h4 class="Slider-heading">
+											<!-- <?php the_title(); ?> -->
+											<p class="Slider-text"><?php the_content(); ?></p>
+										</h4>
+										<h4 class="Slider-heading2">
+											<!-- <?php the_title(); ?> -->
+											<p class="Slider-text2"><a class="Slider-link" href="http://www.rijschoolgegevens.nl/index.asp?pageid=2&gemeente=4813&examenplaats=45&fromsearch=&automaat=0&sortby=2&sortorder=1">Hoogste slagingspercentage <strong>klik hier</strong></p></a>
+										</h4>
+									</div>
+									<!-- <a class="Button Button--offer" href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a> -->
+								</div>
+
+							<?php
+						}
+					}
+					else {
+						echo '<p>Er zijn momenteel geen aanbiedingen';
+					}
+				?>
+			</div>		
+				
 			</div>
 		</div>
 	</div>

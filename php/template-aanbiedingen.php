@@ -9,7 +9,7 @@ Template Name: Aanbiedingen template
 
  
 	<div class="u-gridRow Content-yellow">
-		<div class="u-gridContainer">
+		<div class="Aabieding-wrap u-gridContainer">
 			
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<article class="Content-article" id="post-<?php the_ID(); ?>">
@@ -17,9 +17,14 @@ Template Name: Aanbiedingen template
 					<h2><?php the_title(); ?></h2>
 					<?php } ?>
 					<div class="Aanbiedingen">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/aanbiedingstartpakket10.png"></img>
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/aanbiedingstartpakket25.png"></img>
+						<a href="/cashback"><img src="/files/2014/04/btncashback.png"></img></a>
+						<a href="/cadeaubon"><img src="/files/2014/04/cadeaubonrijschoolcompleet11.jpg"></img></a>
+							
+					</div>
 
+					<div class="Aanbiedingen">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/aanbiedingstartpakket10motor.png"></img>
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/aanbiedingstartpakket25motor.png"></img>
 					</div>
 
 					<div class="Aanbiedingen">

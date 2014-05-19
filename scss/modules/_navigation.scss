@@ -14,7 +14,7 @@
 // Module specific variables
 // -------------------------------------
 
-$nav-breakpoint: 780px;
+$nav-breakpoint: 769px;
 
 // -------------------------------------
 // Modifiers
@@ -26,7 +26,7 @@ $nav-breakpoint: 780px;
 
 .Navigation-link.is-active {
   // text-decoration: underline;
-  color: $c-brightyellow;
+  color: $c-yellow;
 
 }
 
@@ -51,8 +51,10 @@ $nav-breakpoint: 780px;
 }
 
 .Navigation-listItem {
+  position: relative;
   display: inline-block;
-  //margin: 0 1em;
+  cursor:pointer;
+
   &:first-of-type {
     margin-left: 0;
   }
@@ -61,15 +63,12 @@ $nav-breakpoint: 780px;
   }
   border-right: 1px solid rgba($c-yellow, 0.4);
 
-  padding: 0.7rem 1rem;
 
   &:first-of-type {
     border-left: 1px solid rgba($c-yellow, 0.4);
   }
 
-  &:hover {
-    background-color: $c-purple;
-  }
+
   @media screen and (max-width: $nav-breakpoint) {
     display: block;
     border: 1px solid $c-white;
@@ -78,16 +77,34 @@ $nav-breakpoint: 780px;
 
 // ----- Navigation link ----- //
 .Navigation-link {
-  
-  //text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
   font-family: $t-headerFontFamily;
   color: $c-white;
-  font-size: rem(16px);
+  letter-spacing:5.6px;
+  font-size: rem(18px);
   line-height: 1.5;  
+
+  cursor: pointer;
+  -webkit-duration: .3s;
+  -moz-duration: .3s;
+  -o-duration: .3s;
+  transition-duration: .3s;
+
+  &:hover{
+    // background: $c-lightyellow;
+   background: rgba($c-purple, 0.8);
+   }
+  @media screen and (max-width: 980px) {
+    font-size: 13px;
+  }
+
 
 
   &:hover {
     text-decoration: none;
+    background-color: $c-purple;
+
   }
 }
 
@@ -96,7 +113,7 @@ $nav-breakpoint: 780px;
 }
 
 a.Navigation-link{
-  padding: 13px 13px;
+  padding: 12px;
   text-decoration: none;
 }
 
@@ -108,20 +125,40 @@ a.Navigation-link{
 }
 
 .Navigation-menuToggle {
-  
-  
   display: block;
   @media screen and (min-width : $nav-breakpoint) {
-    display: none;
-  color: red;
+  display: none;
   }
 }
 
-#js-menuToggle{
-    fill: blue;
+// #js-menuToggle{
+//   margin-left: 45%;    
+//   margin-top: 10px;
 
-}
+// }
 
 .Navigation-list.is-hidden {
     display: none;
 }
+
+.Navigation-list--dropdown{
+  background-color: $c-darkgrey;
+  color: red;
+  z-index: 99999;
+  position: absolute;
+  border: 0;
+
+  .Navigation-listItem{
+    border: 0;
+   
+     &:hover{
+        text-decoration: underline;
+      }
+    }
+    .Navigation-link.is-active {
+  // text-decoration: underline;
+  color: $c-brightyellow;
+
+}
+}
+

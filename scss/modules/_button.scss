@@ -25,6 +25,9 @@
 .Button--offer {
   background-color: $c-darkgrey;
   color: $c-white;
+  width: 50%;
+  border-bottom-right-radius: 25px;
+
 } 
 
 .Button--review {
@@ -42,9 +45,9 @@
 	color: $c-darkgrey;
 	font-size: rem(25px);
 	float: right;
-	width: 333px;
+	width: 100%;
 	text-align: center;
-	border-bottom-right-radius: 25px;
+	border-top-right-radius: 25px;
 
 	cursor: pointer;
   -webkit-duration: .3s;
@@ -55,6 +58,7 @@
   &:hover{
     // background: $c-lightyellow;
    background: rgba($c-yellow, 0.4);
+   color: $c-white;
    }
 
    @media screen and (max-width: 980px) {
@@ -65,15 +69,14 @@
 }
 
 .Button--home{
-	margin-top: 43px;
+	margin-top: 10px;
 	margin-bottom: 5px;
 	background-color: $c-yellow;
 	color: $c-darkgrey;
 	font-size: rem(25px);
-	float: right;
-	width: 333px;
+  display: block;
 	text-align: center;
-	border-bottom-right-radius: 25px;
+	border-top-right-radius: 25px;
 
 	cursor: pointer;
   -webkit-duration: .3s;
@@ -84,6 +87,7 @@
   &:hover{
     // background: $c-lightyellow;
    background: rgba($c-yellow, 0.4);
+   color: $c-white;
    }
 
    @media screen and (max-width: 980px) {
@@ -94,17 +98,20 @@
 }
 
 .Button--header{
+  margin-right: 16px;
   // margin-top: 43px;
   padding: 0;
-  margin-top: 17px;
+  padding-bottom: 2.2px;
+  margin-top: 20px;
   margin-bottom: 5px;
+  margin-left: 5px;
   background-color: $c-yellow;
   color: $c-darkgrey;
   font-size: rem(25px);
   float: right;
   width: 187px;
   text-align: center;
-  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
 
   cursor: pointer;
   -webkit-duration: .3s;
@@ -122,6 +129,87 @@
     float: none;
     margin-top: 0;
     width: 100%;
+    margin-left: 0;
+   }
+}
+
+.Button--phone{
+  background: url('img/phone.png');
+  // margin-right: 16px;
+  // margin-top: 43px;
+  margin-left: 6.7em;
+  padding: 0;
+  padding-bottom: 2.2px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  // margin-left: 5px;
+  // background-color: $c-yellow;
+  border: 1px solid $c-brightyellow;
+  color: $c-brightyellow;
+  font-size: rem(25px);
+  float: left;
+  width: 200px;
+  text-align: center;
+  // border-top-left-radius: 25px;
+
+  cursor: pointer;
+  // -webkit-duration: .3s;
+  // -moz-duration: .3s;
+  // -o-duration: .3s;
+  // transition-duration: .3s;
+
+  // &:hover{
+  //   // background: $c-lightyellow;
+  //  background: rgba($c-yellow, 0.4);
+  //  color: $c-white;
+  //  }
+
+   @media screen and (max-width: 980px) {
+    float: none;
+    margin-top: 0;
+    width: 100%;
+    margin-top: 1em;
+    margin-left: 0px;
+   }
+}
+
+.Button--cbr{
+  background: url('img/phone.png');
+  // margin-right: 16px;
+  // margin-top: 43px;
+  margin-left: 2em;
+  padding: 0;
+  padding-bottom: 2.2px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  // margin-left: 5px;
+  // background-color: $c-yellow;
+  border: 1px solid $c-brightyellow;
+  color: $c-brightyellow;
+  font-size: rem(25px);
+  float: left;
+  width: 200px;
+  text-align: center;
+  // border-top-left-radius: 25px;
+
+  cursor: pointer;
+  // -webkit-duration: .3s;
+  // -moz-duration: .3s;
+  // -o-duration: .3s;
+  // transition-duration: .3s;
+
+  // &:hover{
+  //   // background: $c-lightyellow;
+  //  background: rgba($c-yellow, 0.4);
+  //  color: $c-white;
+  //  }
+
+   @media screen and (max-width: 980px) {
+    float: none;
+    margin-top: 0;
+    width: 100%;
+    margin-top: 1em;
+    margin-left: 0px;
    }
 }
 

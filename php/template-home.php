@@ -19,7 +19,7 @@ Template Name: Homepage
 	<div class="Offer-wrap">
 		<div class="Offer">
 			<div class="u-gridContainer">
-				<h2 class="Offer-heading u-sectionHeading">Aanbiedingen</h2>
+				<!-- <h6 class="Offer-heading u-sectionHeading">Aanbiedingen</h6> -->
 				<ul class="Offer-slider bxslider">
 				<?php
 					$args = array(
@@ -31,8 +31,8 @@ Template Name: Homepage
 							$aanbiedingen->the_post();
 							?>
 								<div class="Offer-item">
-									<?php the_post_thumbnail(); ?>
-									<a class="Button Button--offer" href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
+									
+									<a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 								</div>
 
 							<?php
@@ -45,52 +45,10 @@ Template Name: Homepage
 			</div>
 		</div>  
  	</div>
-	<div class="u-gridRow Content-wrap">
+
+ 		<div class="Review">
 		<div class="u-gridContainer">
-			<div class="Content u-gridColumn6">
-			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-				<article class="Content-article" id="post-<?php the_ID(); ?>">
-					<?php if(!is_front_page()) { ?>
-					<h2><?php the_title(); ?></h2>
-					<?php } ?>
-					<div>
-						<?php the_content(); ?>
-						<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
-					</div>
-				</article>
-			<?php endwhile; endif; ?>
-			</div>   
-
-			<div>
-				<a class="Button Button--home" href="#"><strong>Meld je nu aan</strong></a>
-			</div> 
-
-			<div class="Usp-col u-gridColumn4 ">
-					<div class="Contactbar-form">
-						<?php echo do_shortcode('[gravityform id="1" name="Contact" title="false"]'); ?>
-					</div>
-						<p class="Usp-text">Nog even de voordelen op een rijtje:</p>
-						<ul class="Usp-list">
-							<li class="icon check"> Hoog slagingspercentage (81%-85 %)</li>
-							<li class="icon check"> Hoge mate van kwaliteit</li>
-							<li class="icon check"> Maatwerk</li>
-							<li class="icon check"> Inzicht in de vorderingen</li>
-							<p class="Usp-text">van de cursist</p>
-							<li class="icon check"> Goede prijs-kwaliteitsverhouding</li>
-							<li class="icon check"> Cursisten krijgen het praktijkboek </li>
-							<p class="Usp-text">'Rijopleiding In Stappen'</p>
-							<li class="icon check"> Een goede service</li>
-						</ul>
-					</div>
-				</div>
-
-		</div>
-	</div>
-
-	<div class="Review">
-		<div class="u-gridContainer">
-			<h2 class="Review-heading u-sectionHeadingWhite">Recensies</h2>
-				<ul class="bxslider">
+				<ul class="Review-slider bxslider">
 					<?php
 					$args = array(
 						// args here
@@ -111,7 +69,6 @@ Template Name: Homepage
 							<li class="Review-item">
 								<blockquote>
 									<?php echo '<p>' . substr($referenties->comment_content, 0, 150) . '...</p>'; ?><br><br>
-									<?php //echo '<p>' . $referenties->comment_date . '</p>'; ?><br>
 									<p>geschreven door &nbsp</p><?php echo '<p>'  . $referenties->comment_author  . '</p>'; ?>
 								</blockquote>
 							</li>
@@ -123,12 +80,57 @@ Template Name: Homepage
 					}
 					?>
 				</ul>
-
 		</div>
-						<a class="Button Button--review" href="/gastenboek">Bekijk meer recensies</a>
-
-
+				<a class="Button Button--review" href="/recensies">Bekijk meer recensies</a>
 	</div>
+
+	<div class="u-gridRow Content-wrap">
+		<div class="u-gridContainer">
+			<div class="Content u-gridColumn7">
+			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+				<article class="Content-article" id="post-<?php the_ID(); ?>">
+					<?php if(!is_front_page()) { ?>
+					<h2><?php the_title(); ?></h2>
+					<?php } ?>
+
+					<div>
+						<?php the_content(); ?>
+						<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
+					</div>
+				</article>
+			<?php endwhile; endif; ?>
+			</div>   
+
+			
+
+			<div class="Usp-col u-gridColumn4 ">
+				<div>
+				<a class="Button Button--home" href="#"><strong>Meld je nu aan</strong></a>
+			</div> 
+			<div class="fb-like-box" data-href="https://www.facebook.com/eminem" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true" data-show-border="false"></div>		
+			
+			<!-- <div class="Contactbar-form">
+						<?php echo do_shortcode('[gravityform id="1" name="Contact" title="false"]'); ?>
+					</div> -->
+						<p class="Usp-text"><strong>Nog even de voordelen op een rijtje:</strong></p>
+						<ul class="Usp-list">
+							<li class="icon check"> Hoog slagingspercentage (81%-85 %)</li>
+							<li class="icon check"> Hoge mate van kwaliteit</li>
+							<li class="icon check"> Maatwerk</li>
+							<li class="icon check"> Inzicht in de vorderingen</li>
+							<p class="Usp-text">van de cursist</p>
+							<li class="icon check"> Goede prijs-kwaliteitsverhouding</li>
+							<li class="icon check"> Cursisten krijgen het praktijkboek </li>
+							<p class="Usp-text">'Rijopleiding In Stappen'</p>
+							<li class="icon check"> Een goede service</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+	</div>
+
+
  	<!--
 	<ul class="bxslider">
 		<li><img src="http://placekitten.com/200/300" /></li>

@@ -31,17 +31,18 @@ Template Name: Two column template
 	<?php endif; ?>
 			</div> 
 
-			<div>
-				<a class="Button Button--registration" href="/aanmelden"><strong>Meld je nu aan</strong></a>
-			</div> 
-
+ 
 
 				
 				<div class="Usp-col u-gridColumn4 ">
-					<div class="Contactbar-form">
+
+			<div>
+				<a class="Button Button--registration" href="/aanmelden"><strong>Meld je nu aan</strong></a>
+			</div> 
+					<!-- <div class="Contactbar-form">
 					<?php echo do_shortcode('[gravityform id="1" name="Contact" title="false"]'); ?>
 					</div>
-				
+				 -->
 				<p class="Usp-text">Nog even de voordelen op een rijtje:</p>
 				<ul class="Usp-list">
 					<li class="icon check"> Hoog slagingspercentage (81%-85 %)</li>

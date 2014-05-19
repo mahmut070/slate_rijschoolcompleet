@@ -4,23 +4,41 @@ Template Name: Opleidingen template
 */
 ?>
 <?php get_header(); ?>
-	<div class="u-gridRow Content-wrap">
-		<div class="u-gridContainer">
-			<div class="u-gridColumn6">
+<div class="u-gridRow Content-wrap">
+	<div class="u-gridContainer">
+		<div class="u-gridColumn6">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-				<article class="Content-article" id="post-<?php the_ID(); ?>">
-					<?php if(!is_front_page()) { ?>
-					<h2><?php the_title(); ?></h2>
-					<?php } ?>
-					<div>
-						<?php the_content(); ?>
-						<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
-					</div>
-				</article>
-			<?php endwhile; endif; ?>
-			</div>   
-
-			<div class="Usp u-gridColumn4 ">
+			<article class="Content-article" id="post-<?php the_ID(); ?>">
+				<?php if(!is_front_page()) { ?>
+				<h2><?php the_title(); ?></h2>
+				<?php } ?>
+				<div>
+					<?php the_content(); ?>
+					<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
+				</div>
+			</article>
+		<?php endwhile; endif; ?>
+	</div>   
+		<div class="Usp-col u-gridColumn4 ">
+			<div class="Side-menu-wrap">
+		<?php
+		wp_nav_menu(array(
+			'container'=> 'nav',
+			'menu' => 'sidemenu',
+			'container_class' =>'Side-menu',
+			'menu_class' => '',
+			'theme_location' => 'sidemenu',
+			'items_wrap' => '<ul id="%1$s" class="Navigation-list--parent %2$s c-shout c-thick">%3$s</ul>',
+			'walker' => new Slate_Walker_Nav_Menu()
+			));
+			?>
+		</div>
+			<div>
+				<a class="Button Button--home" href="#"><strong>Meld je nu aan</strong></a>
+			</div> 
+			<div class="Contactbar-form">
+				<?php echo do_shortcode('[gravityform id="1" name="Contact" title="false"]'); ?>
+			</div>
 				<p>Nog even de voordelen op een rijtje:</p>
 				<ul class="Usp-list">
 					<li class="icon check"> Hoog slagingspercentage (81%-85 %)</li>
@@ -33,7 +51,6 @@ Template Name: Opleidingen template
 					<p class="Usp-text">'Rijopleiding In Stappen'</p>
 					<li class="icon check"> Een goede service</li>
 				</ul>
-			</div>
 
 		</div>
 	</div>
@@ -58,4 +75,4 @@ Template Name: Opleidingen template
 
 
 
-<?php get_footer(); ?>
+	<?php get_footer(); ?>

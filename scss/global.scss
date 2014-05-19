@@ -67,6 +67,8 @@
 
 @import "modules/sidebar";
 
+@import "modules/phone";
+
 @import "modules/main";
 
 @import "modules/content";
@@ -78,6 +80,8 @@
 @import "modules/usp";
 
 @import "modules/contactbar";
+
+@import "modules/sidemenu";
 
 @import "modules/footer";
 
@@ -120,5 +124,10 @@
 	height: 400px;
 	border: 1px solid black;
 }
+
+.Aanbieding-wrap{
+margin-left: 200px;
+}
+
 
 

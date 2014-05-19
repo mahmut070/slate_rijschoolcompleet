@@ -79,6 +79,9 @@
   @include span-columns(10);
 }
 
+.u-gridColumn12{
+  @include span-columns(12);
+}
 
 
 // -------------------------------------
