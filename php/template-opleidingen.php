@@ -20,7 +20,7 @@ Template Name: Opleidingen template
 		<?php endwhile; endif; ?>
 	</div>   
 		<div class="Usp-col u-gridColumn4 ">
-			<div class="Side-menu-wrap">
+			<!-- <div class="Side-menu-wrap">
 		<?php
 		wp_nav_menu(array(
 			'container'=> 'nav',
@@ -32,7 +32,7 @@ Template Name: Opleidingen template
 			'walker' => new Slate_Walker_Nav_Menu()
 			));
 			?>
-		</div>
+		</div> -->
 			<div>
 				<a class="Button Button--home" href="#"><strong>Meld je nu aan</strong></a>
 			</div> 

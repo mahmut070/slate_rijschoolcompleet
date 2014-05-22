@@ -57,7 +57,7 @@
 	<div class="Navigation-wrap dropdown">
 		<div class="u-gridContainer">
 			<?php include 'includes/navigation.php'; ?>
-			<a class="Navigation-menuToggle" id="js-menuToggle"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-icon.png"></a>
+			<a class="Navigation-menuToggle" id="js-menuToggle">Menu</a>
 			
 		</div>
 	</div>
@@ -74,7 +74,9 @@
 
 				</div> 
 				<div>
-					<a class="Button Button--phone" href="tel:0180-394444">06 28408410</a>
+					        
+					<a class="Button Button--phone" href="tel:0628408410"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/phone.png" />Bel ons
+					</a>
 
 				</div> 
 

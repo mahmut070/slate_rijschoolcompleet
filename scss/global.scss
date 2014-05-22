@@ -129,5 +129,17 @@
 margin-left: 200px;
 }
 
+.bx-wrapper .bx-viewport {
+    border: 0px;
+    left: -5px;
+    margin-bottom: 0;
+}
 
+.form-allowed-tags{
+    display: none;
+}
+
+.comment-form-comment > label:nth-child(1){
+    display: none;
+}
 

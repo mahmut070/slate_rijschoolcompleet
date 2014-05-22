@@ -10,7 +10,7 @@ Template Name: Homepage
 			<h1 class="Welcome-title">Welkom op de website van Rijschool Compleet</h1>
 			<p class="Welcome-text">
 				Rijschool compleet is een rijschool met 10 jaar ervaring, en rijdt in de omgeving 
-				Waddinxveen. <br/> U kunt bij ons terecht voor autorijlessen, autorijlessen met aahangwagen, en motorrijlessen.
+					Waddinxveen. <br/> U kunt bij ons terecht voor autorijlessen, autorijlessen met aahangwagen, en motorrijlessen.
 			</p>
 		</div>
 	</div> -->
@@ -31,8 +31,14 @@ Template Name: Homepage
 							$aanbiedingen->the_post();
 							?>
 								<div class="Offer-item">
-									
-									<a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+									 
+									<a href="<?php echo get_permalink(); ?>">
+										<?php 
+											if(get_the_post_thumbnail() == "") { 
+												the_content(); 
+											} else { 
+												the_post_thumbnail();
+											} ?></a>
 								</div>
 
 							<?php
@@ -45,6 +51,16 @@ Template Name: Homepage
 			</div>
 		</div>  
  	</div>
+	<div class="u-gridRow Content-home">
+		<div class="u-gridContainer">
+			<div class="Content u-gridColumn12">
+			<h5>Graag willen wij je welkom heten op onze site. Op deze site zullen wij je zo uitgebreid mogelijk informeren over de activiteiten van Rijschool Compleet.
+				Rijschool Compleet is een rijschool met 10 jaar ervaring in het geven van 
+				autorijlessen, autorijlessen met aanhangwagen en motorrijlessen.</h5>
+					</div>
+				</article>
+			</div> 
+
 
  		<div class="Review">
 		<div class="u-gridContainer">
@@ -53,7 +69,7 @@ Template Name: Homepage
 					$args = array(
 						// args here
 						'number'       => '16',
-						'order'        => 'ASC',
+						'order'        => 'DESC',
 
 						);
 
@@ -69,7 +85,10 @@ Template Name: Homepage
 							<li class="Review-item">
 								<blockquote>
 									<?php echo '<p>' . substr($referenties->comment_content, 0, 150) . '...</p>'; ?><br><br>
-									<p>geschreven door &nbsp</p><?php echo '<p>'  . $referenties->comment_author  . '</p>'; ?>
+									<?php echo '<p>'  . $referenties->comment_author  . ',</p>'; ?>
+									&nbsp</p><?php echo '<p>'  . 
+									date_format(new DateTime($referenties->comment_date),
+									 'd-m-Y H:i')  . '</p>'; ?>
 								</blockquote>
 							</li>
 

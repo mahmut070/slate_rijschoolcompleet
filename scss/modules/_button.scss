@@ -31,7 +31,7 @@
 } 
 
 .Button--review {
-  background-color: $c-yellow;
+  background-color: $c-brightyellow;
   color: $c-darkgrey;
   font-weight: 600;
   display: table;
@@ -41,7 +41,7 @@
 .Button--registration{
 	margin-top: 12px;
 	margin-bottom: 5px;
-	background-color: $c-yellow;
+	background-color: $c-brightyellow;
 	color: $c-darkgrey;
 	font-size: rem(25px);
 	float: right;
@@ -69,9 +69,10 @@
 }
 
 .Button--home{
+
 	margin-top: 10px;
 	margin-bottom: 5px;
-	background-color: $c-yellow;
+	background-color: $c-brightyellow;
 	color: $c-darkgrey;
 	font-size: rem(25px);
   display: block;
@@ -92,20 +93,20 @@
 
    @media screen and (max-width: 980px) {
    	float: none;
-   	margin-top: 0;
+   	margin-top: 10px;
    	width: 100%;
    }
 }
-
+ 
 .Button--header{
   margin-right: 16px;
   // margin-top: 43px;
   padding: 0;
   padding-bottom: 2.2px;
   margin-top: 20px;
-  margin-bottom: 5px;
+  // margin-bottom: 5px;
   margin-left: 5px;
-  background-color: $c-yellow;
+  background-color: $c-brightyellow;
   color: $c-darkgrey;
   font-size: rem(25px);
   float: right;
@@ -134,24 +135,34 @@
 }
 
 .Button--phone{
+    @media screen and (max-width: 3000px){
+    visibility: hidden;
+  }
+
   background: url('img/phone.png');
   // margin-right: 16px;
   // margin-top: 43px;
   margin-left: 6.7em;
   padding: 0;
   padding-bottom: 2.2px;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-bottom: 5px;
   // margin-left: 5px;
   // background-color: $c-yellow;
-  border: 1px solid $c-brightyellow;
-  color: $c-brightyellow;
+  background-color: $c-brightyellow;
+  color: $c-darkgrey;
+  font-size: rem(25px);
+  float: right;
+  width: 187px;
+  text-align: center;
+  border-top-right-radius: 25px;
   font-size: rem(25px);
   float: left;
+  font-weight: 600;
   width: 200px;
   text-align: center;
   // border-top-left-radius: 25px;
-
+  padding-top: 2px;
   cursor: pointer;
   // -webkit-duration: .3s;
   // -moz-duration: .3s;
@@ -165,6 +176,7 @@
   //  }
 
    @media screen and (max-width: 980px) {
+    visibility: visible;
     float: none;
     margin-top: 0;
     width: 100%;
