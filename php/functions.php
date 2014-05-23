@@ -75,4 +75,6 @@ add_action( 'init', 'custom_post_slider' );
 $includes_path = TEMPLATEPATH . '/includes/';
 require_once ($includes_path . 'navigation-walker.php');
 register_nav_menu( 'sidemenu', 'Side Menu' );
+
+add_filter( 'comments_array', 'array_reverse' );
 ?>

@@ -75,7 +75,8 @@
 				</div> 
 				<div>
 					        
-					<a class="Button Button--phone" href="tel:0628408410"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/phone.png" />Bel ons
+					<a class="Button Button--phone" href="tel:0628408410">Bel ons
+					<!-- <a class="Button Button--phone" href="tel:0628408410"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/phone.png" />Bel ons -->
 					</a>
 
 				</div> 

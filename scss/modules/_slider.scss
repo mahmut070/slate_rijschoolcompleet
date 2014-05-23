@@ -15,14 +15,14 @@
 }
 
 // .Slider img {
-// 	width: 100%;
+// 	width: 10 0%;
 // }
 
 .Slider-slogan {
 	position: absolute;
 	bottom: 10%; 
 	// right: 0px;
-	// padding-right: 7%;
+	// padding-right: 7 %;
 	// padding-left: 20px;
 	background-color: rgba($c-purple, 0.6);
 		@media screen and(max-width: 600px){
@@ -37,7 +37,7 @@
 
 	// @media screen and(max-width: 600px){
 	// 	font-size: 20px;
-	// }
+	// } 
 	
 }
 
@@ -91,6 +91,9 @@
 .Slider-link{
 	color: $c-white;
 	font-size: 22px;
+	@media screen and(max-width: 600px){
+		font-size: 10px;
+	}
 }
 
 .Slider-recensies{
