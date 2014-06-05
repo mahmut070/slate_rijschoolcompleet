@@ -89,8 +89,8 @@ function renderOffer(){
 	else{
 		$('.Offer-slider.bxslider').bxSlider({
 		  minSlides: 3,
-		  // randomStart:  'true',
-		  startSlide: 5,
+		  randomStart:  'true',
+		  // startSlide: 5,
 		  maxSlides: 3,
 		  slideWidth: 500,
 		  slideMargin: 40,

@@ -69,6 +69,8 @@
 
 @import "modules/phone";
 
+@import "modules/home";
+
 @import "modules/main";
 
 @import "modules/content";
@@ -141,5 +143,9 @@ margin-left: 200px;
 
 .comment-form-comment > label:nth-child(1){
     display: none;
+}
+
+.Home-title{
+    text-align: center;
 }
 

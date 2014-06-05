@@ -38,7 +38,7 @@
 .Offer-item img {
 	display: inline-block;
 	// max-height: 150px;
-	margin-bottom: 30px;
+	margin-bottom: 30px;  
 
 
 }
@@ -52,6 +52,14 @@
 	margin:0;
 }
 
+.Offer-archive{
+@include span-columns(8);
+
+}
+
+.Offer-thumbnail{
+@include span-columns(4);
+}
 
 
 
