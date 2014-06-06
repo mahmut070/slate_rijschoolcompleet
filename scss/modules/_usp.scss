@@ -44,7 +44,7 @@
 
 
 .Usp-text{
-	padding-left: 33px;
+	padding-left: 29px;
 	margin-top: 0;
 	margin-bottom: 0;
 	font-size: rem(16px);
@@ -52,11 +52,14 @@
 
 	@media screen and (max-width: 980px) {
 	padding-left: 0px;
-	font-size: rem(20px);
+	font-size: rem(20px); 
 	}
 }
 
-
+.Usp-list{
+	line-height: 1.9em;
+	margin-top: 1em;
+}
 
 
 li.icon::before {

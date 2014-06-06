@@ -8,7 +8,7 @@
 .Offer {
 	@include row();
 	// max-height: 505px;
-	max-height: 275px;
+	max-height: 347px;
 	background-color: $c-white;
 
 	.bx-viewport {
@@ -22,7 +22,7 @@
 	//text-align: center;
 	color: $c-darkgrey;
 	margin-top: 15px;
-	margin:0;
+	margin:0; 
 }
 
 
@@ -39,6 +39,7 @@
 	display: inline-block;
 	// max-height: 150px;
 	margin-bottom: 30px;  
+	margin-top: 20px;
 
 
 }

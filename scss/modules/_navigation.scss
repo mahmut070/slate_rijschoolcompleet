@@ -81,10 +81,11 @@ $nav-breakpoint: 769px;
   font-family: $t-headerFontFamily;
   color: $c-white;
   letter-spacing:2px;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   line-height: 1.5;  
   font-weight: 600;
   text-transform: uppercase;
+  word-spacing: 1em;
 
   cursor: pointer;
   -webkit-duration: .3s;
