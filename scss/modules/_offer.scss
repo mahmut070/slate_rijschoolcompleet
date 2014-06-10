@@ -54,7 +54,9 @@
 }
 
 .Offer-archive{
-@include span-columns(8);
+@include span-columns(4);
+float: right;
+
 
 }
 

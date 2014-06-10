@@ -116,7 +116,7 @@ Template Name: Prijzen template
 							<table class="Table">
 				<td style="text-align: center;" colspan="2" valign="middle">
 					
-					<h1><strong>Motor</strong></h1>
+					<h1 name"Motor" id="Motor"><strong>Motor</strong></h1></a>
 				</td>
 				<td>
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/motor.png"></img>

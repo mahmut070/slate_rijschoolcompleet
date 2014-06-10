@@ -8,33 +8,28 @@ Template Name: Aanbieding template
 <div class="u-gridRow Content-wrap">
 		<div class="u-gridContainer">
 			<div class="u-gridColumn7">
-		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			<h2><?php the_title(); ?></h2>
-			<div>
-				<?php the_content(); ?>
-				<?php the_post_thumbnail(); ?>
+			<article class="u-gridRow u-cf" id="post-<?php the_ID(); ?>">
+				<h2><?php the_title(); ?></h2>
+				<div class="Offer-thumbnail u-gridColumn3">
+					<?php the_post_thumbnail(); ?>
+				</div>
+				
+				<div class="Offer-archive">
+					<?php the_content(); ?>
+				</div>
+			</article>
+			<?php endwhile; else: ?>
 
-			</div>
-		</article>
-		
-		<nav>
-			<div><?php previous_post_link('&laquo; %link') ?></div>
-			<div><?php next_post_link('%link &raquo;') ?></div>
-		</nav>
+				<p><?php _('Sorry, no posts matched your criteria.'); ?></p>
 
-	<?php endwhile; else: ?>
-
-		<p><?php _('Sorry, no posts matched your criteria.'); ?></p>
-
-	<?php endif; ?>
-			</div> 
-
+			<?php endif; ?>
+		</div> 
  
 
 				
-				<div class="Usp-col u-gridColumn4 ">
+		<div class="Usp-col u-gridColumn4 ">
 
 			<div>
 				<a class="Button Button--registration" href="/aanmelden"><strong>Meld je nu aan</strong></a>

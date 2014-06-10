@@ -12,7 +12,7 @@ Template Name: Archive template
 
 			<article class="u-gridRow u-cf" id="post-<?php the_ID(); ?>">
 				<h2><?php the_title(); ?></h2>
-				<div class="Offer-thumbnail">
+				<div class="Offer-thumbnail u-gridColumn3">
 					<?php the_post_thumbnail(); ?>
 				</div>
 				
