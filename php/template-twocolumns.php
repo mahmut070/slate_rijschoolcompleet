@@ -37,17 +37,21 @@ Template Name: Two column template
 					<?php echo do_shortcode('[gravityform id="1" name="Contact" title="false"]'); ?>
 					</div>
 				
-				<p class="Usp-text">Nog even de voordelen op een rijtje:</p>
+				<p class="Usp-text"><strong>Nog even de voordelen op een rijtje:</strong></p>
 				<ul class="Usp-list">
-					<li class="icon check"> Hoog slagingspercentage (81%-85 %)</li>
-					<li class="icon check"> Hoge mate van kwaliteit</li>
-					<li class="icon check"> Maatwerk</li>
-					<li class="icon check"> Inzicht in de vorderingen</li>
+					<li class="icon check">Hoog slagingspercentage</li>
+					<li class="icon check">Hoge mate van kwaliteit</li>
+					<li class="icon check">Maatwerk</li>
+					<li class="icon check">Methodische Rijopleiding </li>
+					<p class="Usp-text">in stappen (RIS)</p>
+					<li class="icon check">Inzicht in de vorderingen</li>
+					<li class="icon check">Goede prijs-kwaliteitsverhouding</li>
 					<p class="Usp-text">van de cursist</p>
-					<li class="icon check"> Goede prijs-kwaliteitsverhouding</li>
-					<li class="icon check"> Cursisten krijgen het praktijkboek </li>
-				<p class="Usp-text">'Rijopleiding In Stappen'</p>
-					<li class="icon check"> Een goede service</li>
+					<li class="icon check">Altijd dezelfde instructeur</li>
+					<li class="icon check">Altijd dezelfde lesauto</li>
+					<li class="icon check">Faalangst Gediplomeerd</li>
+					<li class="icon check">Termijnbetaling mogelijk</li>
+					<li class="icon check">Een goede service</li>
 				</ul>
 
 

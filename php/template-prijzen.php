@@ -20,7 +20,7 @@ Template Name: Prijzen template
 						<table class="Table">
 								<tr>
 									<td style="text-align: center;" colspan="2" valign="middle">
-										<h1><strong>Auto </strong></h1>
+								<h1 name"Auto" id="Auto"><strong>Auto</strong></h1></a>
 									</td>
 									<td>
 										<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/car.png"></img>
@@ -198,7 +198,7 @@ Template Name: Prijzen template
 	<table class="Table">
 			<tr>
 				<td style="text-align: center;" colspan="2" valign="middle">
-					<h1><strong>Aanhanger</strong></h1>
+				<h1 name"Aanhanger" id="Aanhanger"><strong>Aanhanger</strong></h1></a>
 				</td>
 				<td>
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/aanhanger.png"></img>

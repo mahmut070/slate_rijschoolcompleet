@@ -77,12 +77,12 @@ function renderOffer(){
 			slideWidth: 500,
 			slideMargin: 40,
 			captions: true,
-			auto: false,
+			auto: true,
 			speed: 800,
 			// startSlide: 7,
 			//infiniteLoop: true,
 			// touchEnabled:false,
-			pause: 7000,
+			pause: 4200,
 			// preventDefaultSwipeX: true,
 			pager: false
 		});
@@ -100,7 +100,7 @@ function renderOffer(){
 		  speed: 800,
 		  infiniteLoop: true,
 		  // touchEnabled:false,
-		  pause: 7000,
+		  pause: 8000,
 		  // preventDefaultSwipeX: true,
 		  pager: false
 		});
