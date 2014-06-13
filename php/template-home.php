@@ -58,8 +58,8 @@ Template Name: Homepage
 			<p>Graag willen wij je welkom heten op onze vernieuwde site. Op deze site zullen wij je zo uitgebreid mogelijk informeren over de activiteiten van Rijschool Compleet.
 Rijschool Compleet is een rijschool met 13 jaar ervaring in het geven van autorijlessen, autorijlessen met aanhangwagen en motorrijlessen.
 </p>
-<p>Wij bieden deze opleidingen voor heel regio Gouda (Waddinxveen, Boskoop, Bodegraven, Stolwijk, Moordrecht, Nieuwerkerk a/d 
-	IJssel Moerkapelle, Reeuwijk, Zevenhuizen).</p>
+<p>Wij bieden deze opleidingen voor heel regio Gouda <b>(Waddinxveen, Boskoop, Bodegraven, Stolwijk, Moordrecht, Nieuwerkerk a/d 
+	IJssel Moerkapelle, Reeuwijk, Zevenhuizen).</b></p>
 
 					</div>
 				</article>
@@ -87,7 +87,8 @@ Rijschool Compleet is een rijschool met 13 jaar ervaring in het geven van autori
 					<br>
 					<!-- <a href="cbr"><img src="/files/2014/05/Screen-Shot-2014-05-30-at-11.42.26.png"></img></a> -->
 					<a href="app"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/app-banner.png" /></a>
-					<a href="app"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cashback.png" /></a>
+					<a href="cashback"><img id="Cashback" src="<?php echo get_stylesheet_directory_uri(); ?>/img/cashback.png" /></a>
+					<a href="cadeaubon"><img src="/files/2014/04/cadeaubonrijschoolcompleet1.jpg"></a>
 					<!-- <a href="cbr"><img src="/files/2014/06/cashback.png"></img></a> -->
 			</div>
 

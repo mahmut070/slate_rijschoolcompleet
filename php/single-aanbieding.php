@@ -38,6 +38,8 @@ Template Name: Aanbieding template
 					<?php echo do_shortcode('[gravityform id="1" name="Contact" title="false"]'); ?>
 					</div>
 				 -->
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" /></a>
+				 
 				<p class="Usp-text"><strong>Nog even de voordelen op een rijtje:</strong></p>
 				<ul class="Usp-list">
 					<li class="icon check">Hoog slagingspercentage</li>

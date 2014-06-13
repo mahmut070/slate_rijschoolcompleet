@@ -11,7 +11,7 @@ Template Name: Aanmelding template
 				<?php echo do_shortcode('[gravityform id="2" name="Contact" title="false"]'); ?>
 				</div>
 				<div class="Usp-col u-gridColumn4 ">
-				
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" /></a>
 				<p class="Usp-text"><strong>Nog even de voordelen op een rijtje:</strong></p>
 				<ul class="Usp-list">
 					<li class="icon check">Hoog slagingspercentage</li>
