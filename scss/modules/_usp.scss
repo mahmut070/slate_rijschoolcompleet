@@ -39,9 +39,29 @@
 		margin-top: 0px;
 		font-size: rem(20px);
   	}
+
+
 }
 
+.Usp-col2{
+  	@include span-columns(4);
+	// margin-top: 43px;	
+	float:right;
+	border-top-right-radius: 25px;
+	// border: 1px solid $c-darkgrey;
+	padding: 1em;
+	padding-top: 1em;
+  	padding-bottom: 1.7em;
+  	margin-bottom: 1em;
+	background-color: $c-purple;
+	color: $c-white;
+	@media screen and (max-width: 980px) {
+		width: 100%;
+		margin-top: 0px;
+		font-size: rem(20px);
+  	}
 
+  	}
 
 .Usp-text{
 	padding-left: 29px;
