@@ -57,19 +57,22 @@ Template Name: Prijzen template
 								</tr>
 								<tr>
 									<td>Verkeerstheorie boek</td>
-									<td>€22,50</td>
+									<td>Zie webshop</td>
 								</tr>
 								<tr>
 									<td>Vragenboek</td>
-									<td>€20,00,-</td>
+									<td><a href="#">Zie webshop</a></td>
+
 								</tr>
 								<tr>
 									<td>C.D.</td>
-									<td>€22,50,-</td>
-								</tr>
+									<td><a href="#">Zie webshop</a></td>
+									
+								</tr> 
 								<tr>
 									<td>Aanvraag C.B.R. theorie examen door de Rijschool</td>
-									<td>€35,-</td>
+									<td><a href="#">Zie webshop</a></td>
+
 								</tr>
 								<tr>
 									<td>Individueel theorie examen reserveren door de rijschool</td>
@@ -81,11 +84,7 @@ Template Name: Prijzen template
 								</tr>
 								<tr>
 									<td>i-Theorie Cursus (online theorie cursus)</td>
-									<td>€90,-</td>
-								</tr>
-								<tr>
-									<td>Individueel theorie examen reserveren door de rijschool</td>
-									<td>€90,-</td>
+									<td>€69,-</td>
 								</tr>
 								<tr>
 									<td>Administratiekosten Rijschool</td>
@@ -112,7 +111,7 @@ Template Name: Prijzen template
 			</tr>
 			<tr>
 				<td>i-Theorie Cursus (online theorie cursus)</td>
-				<td>€60,-</td>
+				<td>€69,-</td>
 			</tr>
 			<tr>
 				<td>CBR AVB examen incl. administratiekosten</td>
@@ -136,7 +135,15 @@ Template Name: Prijzen template
 			</tr>
 			<tr>
 				<td>Verkeerstheorie boek</td>
-				<td>€22,50-</td>
+				<td><a href="#">Zie webshop</a></td>
+			</tr>
+			<tr>
+				<td>Vragenboek</td>
+				<td><a href="#">Zie webshop</a></td>
+			</tr>
+			<tr>
+				<td>CD</td>
+				<td><a href="#">Zie webshop</a></td>
 			</tr>
 			<tr>
 				<td>Aanvraag C.B.R. theorie examen door de Rijschool</td>
