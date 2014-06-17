@@ -59,7 +59,7 @@ Template Name: Prijzen template
 						</tr>
 						<tr>
 							<td>Verkeerstheorie boek</td>
-							<td>Zie webshop</td>
+							<td><a href="#">Zie webshop</a></td>
 						</tr>
 						<tr>
 							<td>Vragenboek</td>
@@ -73,7 +73,7 @@ Template Name: Prijzen template
 						</tr> 
 						<tr>
 							<td>Aanvraag C.B.R. theorie examen door de Rijschool</td>
-							<td><a href="#">Zie webshop</a></td>  
+							<td>€35,-</td> 
 
 						</tr>
 						<tr>
@@ -282,7 +282,7 @@ Template Name: Prijzen template
 			</tr>
 			<tr>
 				<td>Aanvraag C.B.R. theorie examen door de Rijschool</td> 
-				<td><a href="#">Zie webshop</a></td>
+				<td>€35,-</td>
 			</tr>
 			<tr>
 				<td>Individueel theorie examen reserveren door de rijschool</td>
