@@ -72,7 +72,6 @@ function renderOffer(){
 		$('.Offer-slider.bxslider').bxSlider({
 			minSlides: 1,
 			maxSlides: 1,
-			// randomStart:  'true',
 			// mode: 'vertical',
 			slideWidth: 500,
 			slideMargin: 40,
@@ -90,8 +89,6 @@ function renderOffer(){
 	else{
 		$('.Offer-slider.bxslider').bxSlider({
 		  minSlides: 3,
-		  randomStart:  'true',
-		  // startSlide: 5,
 		  maxSlides: 3,
 		  slideWidth: 500,
 		  slideMargin: 40,

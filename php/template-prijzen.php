@@ -8,109 +8,241 @@ Template Name: Prijzen template
 	
 
  
-	<div class="u-gridRow Content-wrap">
-		<div class="u-gridContainer">
-			<div class=".u-gridColumn10">
-			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-				<article class="Content-article" id="post-<?php the_ID(); ?>">
-					<?php if(!is_front_page()) { ?>
-					<h2><?php the_title(); ?></h2>
-					<?php } ?>
-					<div>
-						<table class="Table">
-								<tr>
-									<td style="text-align: center;" colspan="2" valign="middle">
-									<h2 name"Auto" id="Auto"><strong>Auto</strong></h2></a>
-										<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/car.png"></img>
-									</td>
-									
-								</tr>
-								<tr>
-									<td style="text-align: center;"><strong>Onderdeel</strong></td>
-									<td style="text-align: center;" width="90"><strong>Prijs</strong></td>
-								</tr>
-								<tr>
-									<td>Losse Rijles (60 minuten)</td>
-									
-									<td>€46,-</td>
-								</tr>
-								<tr>
-									<td>CBR Praktijkexamen incl. administratiekosten en autohuur tijdens examen</td>
-									
-									<td>€230,-</td>
-								</tr>
-								<tr>
-									<td>Tussentijdse Toets incl. administratie kosten en autohuur tijdens de toets</td>
-									<td>€175,-</td>
-								</tr>
-								<tr>
-									<td>Deel toets 2 R.I.S</td>
-									<td>€46</td>
-								</tr>
-								<tr>
-									<td>Eigen Verklaring (online kopen en invullen via CBR.nl)  <b>inloggen met je DIGID</b>(* eis van CBR)</td>
-									<td>€25.80,-</td>
-								</tr>
-								<tr>
-									<td>R.I.S. Praktijkboek</td>
-									<td>€19,95,-</td>
-								</tr>
-								<tr>
-									<td>Verkeerstheorie boek</td>
-									<td>Zie webshop</td>
-								</tr>
-								<tr>
-									<td>Vragenboek</td>
-									<td><a href="#">Zie webshop</a></td>
+<div class="u-gridRow Content-wrap">
+<div class="u-gridContainer">
+	<div class=".u-gridColumn10">
+	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+		<article class="Content-article" id="post-<?php the_ID(); ?>">
+			<?php if(!is_front_page()) { ?>
+			<h2><?php the_title(); ?></h2>
+			<?php } ?>
+			<div>
 
-								</tr>
-								<tr>
-									<td>C.D.</td>
-									<td><a href="#">Zie webshop</a></td>
-									
-								</tr> 
-								<tr>
-									<td>Aanvraag C.B.R. theorie examen door de Rijschool</td>
-									<td><a href="#">Zie webshop</a></td>
-
-								</tr>
-								<tr>
-									<td>Individueel theorie examen reserveren door de rijschool</td>
-									<td>€90,-</td>
-								</tr>
-								<tr>
-									<td>Theorie examen CBR	</td>
-									<td>€25,55,-</td>
-								</tr>
-								<tr>
-									<td>i-Theorie Cursus (online theorie cursus)</td>
-									<td>€69,-</td>
-								</tr>
-								<tr>
-									<td>Administratiekosten Rijschool</td>
-									<td>€20,-</td>
-								</tr>
-						</table>
-
+<!--//////////////////////////////////////AUTO//////////////////////////////////////////-->
+				<table class="Table">
 						<tr>
-							<table class="Table">
+							<td style="text-align: center;" colspan="2" valign="middle">
+							<h2 name"Auto" id="Auto"><strong>Auto</strong></h2></a>
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/car.png"></img>
+							</td>
+							
+						</tr>
+						<tr>
+							<td style="text-align: center;"><strong>Onderdeel</strong></td>
+							<td style="text-align: center;" width="90"><strong>Prijs</strong></td>
+						</tr>
+						<tr>
+							<td>Losse Rijles <sup>(60 minuten)</sup></td>
+							
+							<td>€46,-</td>
+						</tr>
+						<tr>
+							<td>CBR Praktijkexamen incl. administratiekosten en autohuur tijdens examen</td>
+							
+							<td>€230,-</td>
+						</tr>
+						<tr>
+							<td>Tussentijdse Toets incl. administratie kosten en autohuur tijdens de toets</td>
+							<td>€175,-</td>
+						</tr>
+						<tr>
+							<td>Deel toets 2 R.I.S</td>
+							<td>€46</td>
+						</tr>
+						<tr>
+							<td>Eigen Verklaring <sup>(online kopen en invullen via CBR.nl)</sup>  <b><a href="https://mijn.cbr.nl/nl/Authentication/Login?ReturnUrl=%2f">inloggen met je DIGID</a></b> <sup>(* eis van CBR)</sup></td>
+							<td>€25.80,-</td>
+						</tr>
+						<tr>
+							<td>R.I.S. Praktijkboek</td>
+							<td>€19,95,-</td>
+						</tr>
+						<tr>
+							<td>Verkeerstheorie boek</td>
+							<td>Zie webshop</td>
+						</tr>
+						<tr>
+							<td>Vragenboek</td>
+							<td><a href="#">Zie webshop</a></td>
+
+						</tr>
+						<tr>
+							<td>C.D.</td>
+							<td><a href="#">Zie webshop</a></td> 
+							
+						</tr> 
+						<tr>
+							<td>Aanvraag C.B.R. theorie examen door de Rijschool</td>
+							<td><a href="#">Zie webshop</a></td>  
+
+						</tr>
+						<tr>
+							<td>Individueel theorie examen reserveren door de rijschool</td>
+							<td>€90,-</td>
+						</tr>
+						<tr>
+							<td>Theorie examen CBR	</td>
+							<td>€25,55,-</td>
+						</tr>
+						<tr>
+							<td>i-Theorie Cursus <sup>(online theorie cursus)</sup></td>
+							<td>€69,-</td>
+						</tr> 
+						<tr>
+							<td>Administratiekosten Rijschool</td>
+							<td>€20,-</td>
+						</tr>
+				</table>
+
+				<!--//////////////////////////////////////PAKKETTEN//////////////////////////////////////////-->
+<table class="Table">
+				<tr>
+					<td style="text-align: center;" colspan="2" valign="middle">
+				<h1 name"Auto" id="Auto"><strong>Pakketten</strong></h1></a>
+					</td>
+			<!-- 		<td>
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/car.png"></img>
+				</td> -->
+				</tr>
+				<tr>
+					<td style="text-align: center;"><strong>Pakket naam</strong></td>
+					<td style="text-align: center;"><strong>Inhoud</strong></td>
+					<td style="text-align: center;" width="90"><strong>Prijs</strong></td>
+				</tr>
+				<tr>
+					<td>Start pakket <br> A 10</td>
+					<td>
+						<ul>
+							<li>10 Rijlessen</li> 
+							<li>Gratis i-Theorie Cursus</li>
+							<li><sup>*Startpakket is eenmalig af te nemen</sup><li>
+						</ul>
+					</td>
+					<td>€399,-</td>
+				</tr>
+
+				<tr>
+					<td>Start Pakket <br> B 25</td>
+					<td>
+						<ul>
+							<li>25 Rijlessen <sup>(60 minuten)</sup></li>
+							<li>Gratis i-Theorie Cursus</li>
+							<li>Gratis Tussentijdse Toets (T.T.T)</li>
+							<li>Gratis Praktijkexamen</li>
+							<li>Gratis Deel 2 Toets</li>
+							<li>Administratiekosten</li>
+						</ul>
+					</td>
+					<td>€1450,-</td>
+				</tr>
+
+				<tr>
+					<td>Compleet Pakket</td>
+					<td>
+						<ul>
+							<li>40 Rijlessen <sup>(60 minuten)</sup></li>
+							<li>Gratis Praktijkexamen </li>
+							<li>Gratis Tussentijdse Toets <sup>(T.T.T)</sup></li>
+							<li>Gratis Deel 2 Toets</li>
+							<li>Administratiekosten</li>
+							<li>Gratis Praktijk Examengarantie<sup>*</li>
+							<li><sup>*Examengarantie is een eenmalig gratis Praktijk Herexamen exclusief  Rijlessen</sup></li>
+						</ul>
+					</td>
+					<td>€2220,-</td>
+				</tr>
+
+				<tr>
+					<td name="14Daagse" id="14Daagse">14 Daagse Rijopleiding</td> 
+					<td>
+						<ul>
+							<li>Bij een 14 Daagse rijopleiding is de het mogelijk om 2 uur in de ochtend en 2 uur in de middag te lessen. Zo is het mogelijk om binnen 14 dagen je rijbewijs te halen.</li>
+							<a href="/spoedopleiding"><li>Zie voor meer informatie Spoedopleiding</li></a>
+						</ul>
+					</td>
+				</tr>
+
+				<tr>
+					<td>Pakket A 14</td>
+					<td>
+						<ul>
+							<li>25 Rijlessen van 60 minuten</li>
+							<li>Gratis CBR Praktijkexamen  </li>
+							<li>Gratis Deel 2 Toets</li>
+							<li>Administratiekosten</li>
+							<li><sup>* Dit Pakket is eventueel naar keuze uit te breiden met een Tussentijdse Toets met een toeslag van €150 i.p.v. €175</sup></li>
+						</ul>
+					</td>
+					<td>€1350,-</td>
+				</tr>
+
+				<tr>
+					<td>Pakket B 14</td>
+					<td>
+						<ul>
+							<li>30 Rijlessen van 60 minuten</li>
+							<li>Gratis CBR Praktijkexamen  </li>
+							<li>Gratis Deel 2 Toets</li>
+							<li>Administratiekosten</li>
+							<li><sup>* Dit Pakket is eventueel naar keuze uit te breiden met een Tussentijdse Toets met een toeslag van €150 i.p.v. €175</sup></li>
+						</ul>
+					</td>
+					<td>€1580,-</td>
+				</tr>
+
+				<tr>
+					<td>Pakket C 14</td>
+					<td>
+						<ul>
+							<li>35 Rijlessen van 60 minuten</li>
+							<li>Gratis CBR Praktijkexamen  </li>
+							<li>Gratis Deel 2 Toets</li>
+							<li>Administratiekosten</li>
+							<li><sup>* Dit Pakket is eventueel naar keuze uit te breiden met een Tussentijdse Toets met een toeslag van €150 i.p.v. €175<sup></li>
+						</ul>
+					</td>
+					<td>€1810,-</td>
+				</tr>
+
+				<tr>
+					<td>Zomeractie</td>
+					<td>
+						<ul>
+							<li>10 Rijlessen<sup>*</sup></li>
+							<li>24 Rijlessen<sup>*</sup></li>
+							<li>30 Rijlessen<sup>*</sup></li>
+							<li>36 Rijlessen<sup>*</sup></li>
+							<li><sup>* Rijlessen van 45 minuten. Eventueel uit te breiden met een Tussentijdse Toets en een examen met een toeslag van €350 i.p.v. €405</sup></li>
+						</ul>	
+					</td>
+					<td>
+						<ul>
+							<li>€307,50</li>
+							<li>€738,-</li>
+							<li>€922,50</li>
+							<li>€1107,-</li>
+						</ul>
+					</td>
+				</tr>
+
+		</table>
+
+<!--//////////////////////////////////////MOTOR//////////////////////////////////////////-->
+				<table class="Table">
 				<td style="text-align: center;" colspan="2" valign="middle">
-					
 					<h2 name"Motor" id="Motor"><strong>Motor</strong></h2></a>
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/motor.png"></img>
 				</td>
-				
-			</tr>
 			<tr>
 				<td style="text-align: center;"><strong>Onderdeel</strong></td>
 				<td style="text-align: center;" width="90"><strong>Prijs</strong></td>
 			</tr>
 			<tr>
-				<td>Losse Rijles (60 minuten)</td>
+				<td>Losse Rijles <sup>(60 minuten)</sup></td>
 				<td>€45,-</td>
 			</tr>
 			<tr>
-				<td>i-Theorie Cursus (online theorie cursus)</td>
+				<td>i-Theorie Cursus <sup>(online theorie cursus)</sup></td>
 				<td>€69,-</td>
 			</tr>
 			<tr>
@@ -118,19 +250,19 @@ Template Name: Prijzen template
 				<td>€120,-</td>
 			</tr>
 			<tr>
-				<td>C.B.R. praktijkexamen A.V.D. incl. administratiekosten + eigen verklaring C.B.R.</td>
+				<td>C.B.R. praktijkexamen A.V.D. incl. administratiekosten</td>
 				<td>€225,-</td>
 			</tr>
 			<tr>
-				<td>Eigen Verklaring* (online kopen en invullen via CBR.nl) <b>inloggen met je DIGID</b> (* eis van CBR)</td>
+				<td>Eigen Verklaring<sup>*(online kopen en invullen via CBR.nl)</sup> <b><a href="https://mijn.cbr.nl/nl/Authentication/Login?ReturnUrl=%2f">inloggen met je DIGID</a></b> <sup>(* eis van CBR)</sup></td>
 				<td>€25,80</td>
 			</tr>
 			<tr>
-				<td>Startpakket 10 lessen (60 minuten)</td>
+				<td>Startpakket 10 lessen <sup>(60 minuten)</sup></td>
 				<td>€399,-</td>
 			</tr>
 			<tr>
-				<td>Kortingspakket 25 lessen (60 minuten)  C.B.R. AVB / Voertuigbeheersing examen incl. administratiekosten C.B.R. AVD Praktijkexamen incl. administratiekosten </td>
+				<td>Kortingspakket 25 lessen <sup>(60 minuten)</sup>  C.B.R. AVB / Voertuigbeheersing examen incl. administratiekosten C.B.R. AVD Praktijkexamen incl. administratiekosten </td>
 				<td>€1380,-</td>
 			</tr>
 			<tr>
@@ -146,8 +278,8 @@ Template Name: Prijzen template
 				<td><a href="#">Zie webshop</a></td>
 			</tr>
 			<tr>
-				<td>Aanvraag C.B.R. theorie examen door de Rijschool</td>
-				<td>€35,-</td>
+				<td>Aanvraag C.B.R. theorie examen door de Rijschool</td> 
+				<td><a href="#">Zie webshop</a></td>
 			</tr>
 			<tr>
 				<td>Individueel theorie examen reserveren door de rijschool</td>
@@ -159,10 +291,11 @@ Template Name: Prijzen template
 			</tr>
 			<tr>
 				<td>Administratiekosten Rijschool</td>
-				<td>€20,-</td>
+				<td>€20,-</td> 
 			</tr>
 	</table>
 
+<!--//////////////////////////////////////AANHANGER//////////////////////////////////////////-->
 	<table class="Table">
 			<tr>
 				<td style="text-align: center;" colspan="2" valign="middle">
@@ -176,7 +309,7 @@ Template Name: Prijzen template
 				<td style="text-align: center;" width="90"><strong>Prijs</strong></td>
 			</tr>
 			<tr>
-				<td colspan="2">Losse Rijles (60 minuten)</td>
+				<td colspan="2">Losse Rijles <sup>(60 minuten)</sup></td>
 				<td>€57,-</td>
 			</tr>
 			<tr>
@@ -185,28 +318,25 @@ Template Name: Prijzen template
 			</tr>
 			<tr>
 				<td colspan="2">Dagopleiding: Start om 8.30 en examen om 14.00</td>
-				<td>€529,-</td>
+				<td>€499,-</td>
 			</tr>
 			<tr>
-				<td colspan="2">Eigen Verklaring* (online kopen en invullen via CBR.nl)  inloggen met je DIGID</td>
-				<td>€529,-</td>
-			</tr>
-			<tr>
-				<td colspan="2">Dagopleiding: Start om 8.30 en examen om 14.00</td>
-				<td>25,80,-</td>
+				<td colspan="2">Eigen Verklaring <sup>*(online kopen en invullen via CBR.nl)</sup>  <b><a href="https://mijn.cbr.nl/nl/Authentication/Login?ReturnUrl=%2f">inloggen met je DIGID</a></b> <sup>(* eis van CBR)</sup></td>
+				<td>€25,80,-</td> 
 			</tr>
 			<tr>
 				<td colspan="2">Administratiekosten Rijschool</td>
 				<td>€20,-</td>
 			</tr>
 			<tr>
-				<td colspan="2">Caravan Training (training van 3 uur) incl. boek “Veilig op weg”</td>
+				<td colspan="2">Caravan Training <sup>(training van 3 uur)</sup> incl. boek “Veilig op weg”</td>
 				<td>€130,-</td>
 			</tr>
 	</table>
 
 	<table class="Table">
-		
+
+<!--//////////////////////////////////////BROMFIETS//////////////////////////////////////////-->
 			<tr>
 				<td style="text-align: center;" colspan="2" valign="middle">
 					<h2><strong>Bromfiets</strong></h2>
@@ -218,24 +348,46 @@ Template Name: Prijzen template
 				<td style="text-align: center;" width="90"><strong>Prijs</strong></td>
 			</tr>
 			<tr>
-				<td colspan="2">Theorieboek</td>
-				<td>€20,-</td>
+				<td colspan="2">Eigen Verklaring<sup>* (online kopen en invullen via CBR.nl)</sup> <b><a href="https://mijn.cbr.nl/nl/Authentication/Login?ReturnUrl=%2f">inloggen met je DIGID</a></b> <sup>(* eis van CBR)</sup></td>
+				<td>€25,80,-</td> 
+			</tr>
+				<tr>
+				<td colspan="2">i-Theorie Cursus <sup>(online theorie cursus)</sup></td>
+				<td>€69,-</td> 
 			</tr>
 			<tr>
-				<td colspan="2">Vragenboek</td>
-				<td>€20,-</td>
+				<td colspan="2">Theorieboek</td>
+				<td><a href="#">Zie webshop</a></td>
+			</tr>
+			<tr>
+				<td colspan="2">Vragenboek</td> 
+				<td><a href="#">Zie webshop</a></td>
 			</tr>
 			<tr>
 				<td colspan="2">C.D.</td>
-				<td>€20,-</td>
+				<td><a href="#">Zie webshop</a></td>
 			</tr>
-	</table>
+			</tr>
+				<tr>
+				<td colspan="2">Theorie examen CBR</td>
+				<td>€25,55,-</td> 
+			</tr>
+			</tr>
+			<tr>
+				<td colspan="2">Cursus 4 uur les, praktijk incl. examen en theorie examen</td>
+				<td>€369,-</td> 
+			</tr>
+			<tr>
+				<td colspan="2">Administratiekosten</td>
+				<td>€20,-</td> 
+			</tr>
+	</table> 
 
+<!--//////////////////////////////////////CARAVAN//////////////////////////////////////////-->
 		<table class="Table">
-		
 			<tr>
 				<td style="text-align: center;" colspan="2" valign="middle">
-					<h2><strong>Caravan</strong></h2>
+					<h2><strong>Caravantraining</strong></h2>
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/caravan.png"></img>
 				</td>
 			</tr>
@@ -248,158 +400,8 @@ Template Name: Prijzen template
 				<td>€130,-</td>
 			</tr>
 		</tbody>
-	</table>
-	<table class="Table">
-		
-			<tr>
-				<td style="text-align: center;" colspan="2" valign="middle">
-					<h2><strong>Examen machtiging<br></strong></h2>
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cbr.png"></img>
-				</td>
-				
-			</tr>
-			<tr>
-				<td style="text-align: center;" colspan="2"><strong>Onderdeel</strong><br></td>
-				<td style="text-align: center;" width="90"><strong>Prijs</strong></td>
-			</tr>
-			<tr>
-				<td colspan="2">Wie praktijkexamen voor de categorie B&nbsp; (personenauto) wil aanvragen bij Rijschool Compleet, moet eerst de rijschool machtiging geven om dit examen aan te vragen en te reserveren. Het inschrijfnummer van Rijschool Compleet is 5248A1.<br></td>
-				<td><a class="Table-link" href="https://mijn.cbr.nl/" target="_blank">Link naar CBR</a><br></td>
-			</tr>
-		</tbody>
-	</table>
+	</table> 
 
-	<table class="Table">
-								<tr>
-									<td style="text-align: center;" colspan="2" valign="middle">
-								<h1 name"Auto" id="Auto"><strong>Pakketten</strong></h1></a>
-									</td>
-							<!-- 		<td>
-										<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/car.png"></img>
-								</td> -->
-								</tr>
-								<tr>
-									<td style="text-align: center;"><strong>Pakket naam</strong></td>
-									<td style="text-align: center;"><strong>Inhoud</strong></td>
-									<td style="text-align: center;" width="90"><strong>Prijs</strong></td>
-								</tr>
-								<tr>
-									<td>Start pakket <br> A 10</td>
-									<td>
-										<ul>
-											<li>10 Rijlessen</li>
-											<li>Gratis i-Theorie Cursus</li>
-											<li>*Startpakket is eenmalig af te nemen<li>
-										</ul>
-									</td>
-									<td>€399,-</td>
-								</tr>
-
-								<tr>
-									<td>Start Pakket <br> B 25</td>
-									<td>
-										<ul>
-											<li>25 Rijlessen van 60 minuten</li>
-											<li>Gratis i-Theorie Cursus</li>
-											<li>Gratis Tussentijdse Toets (T.T.T)</li>
-											<li>Gratis Praktijkexamen</li>
-											<li>Gratis Deel 2 Toets</li>
-											<li>Administratiekosten</li>
-										</ul>
-									</td>
-									<td>€1450,-</td>
-								</tr>
-
-								<tr>
-									<td>Compleet Pakket</td>
-									<td>
-										<ul>
-											<li>40 Rijlessen van 60 minuten</li>
-											<li>Gratis Praktijkexamen </li>
-											<li>Gratis Tussentijdse Toets (T.T.T)</li>
-											<li>Gratis Deel 2 Toets</li>
-											<li>Administratiekosten</li>
-											<li>Gratis Praktijk Examengarantie*</li>
-											<li>*Examengarantie is een eenmalig gratis Praktijk Herexamen exclusief  Rijlessen</li>
-										</ul>
-									</td>
-									<td>€2220,-</td>
-								</tr>
-
-								<tr>
-									<td>14 Daagse Rijopleiding</td>
-									<td>
-										<ul>
-											<li>Bij een 14 Daagse rijopleiding is de het mogelijk om 2 uur in de ochtend en 2 uur in de middag te lessen. Zo is het mogelijk om binnen 14 dagen je rijbewijs te halen.</li>
-											<a href="/spoedopleiding"><li>Zie voor meer informatie Spoedopleiding</li></a>
-										</ul>
-									</td>
-								</tr>
-
-								<tr>
-									<td>Pakket A 14</td>
-									<td>
-										<ul>
-											<li>25 Rijlessen van 60 minuten</li>
-											<li>Gratis CBR Praktijkexamen  </li>
-											<li>Gratis Deel 2 Toets</li>
-											<li>Administratiekosten</li>
-											<li>* Dit Pakket is eventueel naar keuze uit te breiden met een Tussentijdse Toets met een toeslag van €150 i.p.v. €175</li>
-										</ul>
-									</td>
-									<td>€1350,-</td>
-								</tr>
-
-								<tr>
-									<td>Pakket B 14</td>
-									<td>
-										<ul>
-											<li>30 Rijlessen van 60 minuten</li>
-											<li>Gratis CBR Praktijkexamen  </li>
-											<li>Gratis Deel 2 Toets</li>
-											<li>Administratiekosten</li>
-											<li>* Dit Pakket is eventueel naar keuze uit te breiden met een Tussentijdse Toets met een toeslag van €150 i.p.v. €175</li>
-										</ul>
-									</td>
-									<td>€1580,-</td>
-								</tr>
-
-								<tr>
-									<td>Pakket C 14</td>
-									<td>
-										<ul>
-											<li>35 Rijlessen van 60 minuten</li>
-											<li>Gratis CBR Praktijkexamen  </li>
-											<li>Gratis Deel 2 Toets</li>
-											<li>Administratiekosten</li>
-											<li>* Dit Pakket is eventueel naar keuze uit te breiden met een Tussentijdse Toets met een toeslag van €150 i.p.v. €175</li>
-										</ul>
-									</td>
-									<td>€1810,-</td>
-								</tr>
-
-								<tr>
-									<td>Zomeractie</td>
-									<td>
-										<ul>
-											<li>10 Rijlessen*</li>
-											<li>24 Rijlessen*</li>
-											<li>30 Rijlessen*</li>
-											<li>36 Rijlessen*</li>
-											<li>* Rijlessen van 45 minuten. Eventueel uit te breiden met een Tussentijdse Toets en een examen met een toeslag van €350 i.p.v. €405</li>
-										</ul>	
-									</td>
-									<td>
-										<ul>
-											<li>€307,50</li>
-											<li>€738,-</li>
-											<li>€922,50</li>
-											<li>€1107,-</li>
-										</ul>
-									</td>
-								</tr>
-
-						</table>
 
 
 	<p><br>** Zie voorwaarden op deze website; te weten artikel 3-betaling, regel 10 en 11.</p>

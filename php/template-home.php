@@ -24,6 +24,8 @@ Template Name: Homepage
 				<?php
 					$args = array(
 						'post_type' => 'aanbieding',
+						'orderby' => 'date',
+						'order' => 'DESC'
 					);
 					$aanbiedingen = new WP_Query( $args );
 					if( $aanbiedingen->have_posts() ) {
