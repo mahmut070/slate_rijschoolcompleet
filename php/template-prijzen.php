@@ -94,6 +94,8 @@ Template Name: Prijzen template
 						</tr>
 				</table>
 
+				
+
 				<!--//////////////////////////////////////PAKKETTEN//////////////////////////////////////////-->
 <table class="Table">
 				<tr>
@@ -160,6 +162,7 @@ Template Name: Prijzen template
 							<a href="/spoedopleiding"><li>Zie voor meer informatie Spoedopleiding</li></a>
 						</ul>
 					</td>
+					<td></td>
 				</tr>
 
 				<tr>

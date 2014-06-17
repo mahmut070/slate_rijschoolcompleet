@@ -33,9 +33,9 @@ Template Name: Two column template
 					<div>
 						<a class="Button Button--registration" href="/aanmelden"><strong>Meld je nu aan</strong></a>
 					</div> 
-					<div class="Contactbar-form">
+					<!-- <div class="Contactbar-form">
 					<?php echo do_shortcode('[gravityform id="1" name="Contact" title="false"]'); ?>
-					</div>
+					</div> -->
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" /></a>
 				
 				<p class="Usp-text"><strong>Nog even de voordelen op een rijtje:</strong></p>
