@@ -100,7 +100,7 @@ Template Name: Prijzen template
 <table class="Table">
 				<tr>
 					<td style="text-align: center;" colspan="2" valign="middle">
-				<h1 name"Auto" id="Auto"><strong>Pakketten</strong></h1></a>
+				<h1 name"Pakket" id="Pakket"><strong>Pakketten</strong></h1></a>
 					</td>
 			<!-- 		<td>
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/car.png"></img>
