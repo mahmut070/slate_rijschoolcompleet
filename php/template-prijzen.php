@@ -59,16 +59,16 @@ Template Name: Prijzen template
 						</tr>
 						<tr>
 							<td>Verkeerstheorie boek</td>
-							<td><a href="#">Zie webshop</a></td>
+							<td><a target="_Blank" href="http://www.theorie-leren.nl/shop/home">Zie webshop</a></td>
 						</tr>
 						<tr>
 							<td>Vragenboek</td>
-							<td><a href="#">Zie webshop</a></td>
+							<td><a target="_Blank" href="http://www.theorie-leren.nl/shop/home">Zie webshop</a></td>
 
 						</tr>
 						<tr>
 							<td>C.D.</td>
-							<td><a href="#">Zie webshop</a></td> 
+							<td><a target="_Blank" href="http://www.theorie-leren.nl/shop/home">Zie webshop</a></td> 
 							
 						</tr> 
 						<tr>
@@ -85,7 +85,7 @@ Template Name: Prijzen template
 							<td>€25,55,-</td>
 						</tr>
 						<tr>
-							<td>i-Theorie Cursus <sup>(online theorie cursus)</sup></td>
+							<td><a href="http://itheorie.nl/">i-Theorie</a> Cursus <sup>(online theorie cursus)</sup></td>
 							<td>€69,-</td>
 						</tr> 
 						<tr>
@@ -99,7 +99,7 @@ Template Name: Prijzen template
 				<!--//////////////////////////////////////PAKKETTEN//////////////////////////////////////////-->
 <table class="Table">
 				<tr>
-					<td style="text-align: center;" colspan="2" valign="middle">
+					<td style="text-align: center;" colspan="3" valign="middle">
 				<h1 name"Pakket" id="Pakket"><strong>Pakketten</strong></h1></a>
 					</td>
 			<!-- 		<td>
@@ -116,7 +116,7 @@ Template Name: Prijzen template
 					<td>
 						<ul>
 							<li>10 Rijlessen</li> 
-							<li>Gratis i-Theorie Cursus</li>
+							<li>Gratis <a href="http://itheorie.nl/">i-Theorie</a> Cursus</li>
 							<li><sup>*Startpakket is eenmalig af te nemen</sup><li>
 						</ul>
 					</td>
@@ -128,7 +128,7 @@ Template Name: Prijzen template
 					<td>
 						<ul>
 							<li>25 Rijlessen <sup>(60 minuten)</sup></li>
-							<li>Gratis i-Theorie Cursus</li>
+							<li>Gratis <a href="http://itheorie.nl/">i-Theorie</a> Cursus</li>
 							<li>Gratis Tussentijdse Toets (T.T.T)</li>
 							<li>Gratis Praktijkexamen</li>
 							<li>Gratis Deel 2 Toets</li>
@@ -245,7 +245,7 @@ Template Name: Prijzen template
 				<td>€45,-</td>
 			</tr>
 			<tr>
-				<td>i-Theorie Cursus <sup>(online theorie cursus)</sup></td>
+				<td><a href="http://itheorie.nl/">i-Theorie</a> Cursus <sup>(online theorie cursus)</sup></td>
 				<td>€69,-</td>
 			</tr>
 			<tr>
@@ -270,15 +270,15 @@ Template Name: Prijzen template
 			</tr>
 			<tr>
 				<td>Verkeerstheorie boek</td>
-				<td><a href="#">Zie webshop</a></td>
+				<td><a target="_Blank" href="http://www.theorie-leren.nl/shop/home">Zie webshop</a></td>
 			</tr>
 			<tr>
 				<td>Vragenboek</td>
-				<td><a href="#">Zie webshop</a></td>
+				<td><a target="_Blank" href="http://www.theorie-leren.nl/shop/home">Zie webshop</a></td>
 			</tr>
 			<tr>
 				<td>CD</td>
-				<td><a href="#">Zie webshop</a></td>
+				<td><a target="_Blank" href="http://www.theorie-leren.nl/shop/home">Zie webshop</a></td>
 			</tr>
 			<tr>
 				<td>Aanvraag C.B.R. theorie examen door de Rijschool</td> 
@@ -301,7 +301,7 @@ Template Name: Prijzen template
 <!--//////////////////////////////////////AANHANGER//////////////////////////////////////////-->
 	<table class="Table">
 			<tr>
-				<td style="text-align: center;" colspan="2" valign="middle">
+				<td style="text-align: center;" colspan="3" valign="middle">
 				<h2 name"Aanhanger" id="Aanhanger"><strong>Aanhanger</strong></h2></a>
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/aanhanger.png"></img>
 				</td>
@@ -341,7 +341,7 @@ Template Name: Prijzen template
 
 <!--//////////////////////////////////////BROMFIETS//////////////////////////////////////////-->
 			<tr>
-				<td style="text-align: center;" colspan="2" valign="middle">
+				<td style="text-align: center;" colspan="3" valign="middle">
 					<h2><strong>Bromfiets</strong></h2>
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brommer.png"></img>
 				</td>
@@ -355,20 +355,20 @@ Template Name: Prijzen template
 				<td>€25,80,-</td> 
 			</tr>
 				<tr>
-				<td colspan="2">i-Theorie Cursus <sup>(online theorie cursus)</sup></td>
+				<td colspan="2"><a href="http://itheorie.nl/">i-Theorie</a> Cursus <sup>(online theorie cursus)</sup></td>
 				<td>€69,-</td> 
 			</tr>
 			<tr>
 				<td colspan="2">Theorieboek</td>
-				<td><a href="#">Zie webshop</a></td>
+				<td><a target="_Blank" href="http://www.theorie-leren.nl/shop/home">Zie webshop</a></td>
 			</tr>
 			<tr>
 				<td colspan="2">Vragenboek</td> 
-				<td><a href="#">Zie webshop</a></td>
+				<td><a target="_Blank" href="http://www.theorie-leren.nl/shop/home">Zie webshop</a></td>
 			</tr>
 			<tr>
 				<td colspan="2">C.D.</td>
-				<td><a href="#">Zie webshop</a></td>
+				<td><a target="_Blank" href="http://www.theorie-leren.nl/shop/home">Zie webshop</a></td>
 			</tr>
 			</tr>
 				<tr>
@@ -389,7 +389,7 @@ Template Name: Prijzen template
 <!--//////////////////////////////////////CARAVAN//////////////////////////////////////////-->
 		<table class="Table">
 			<tr>
-				<td style="text-align: center;" colspan="2" valign="middle">
+				<td style="text-align: center;" colspan="3" valign="middle">
 					<h2><strong>Caravantraining</strong></h2>
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/caravan.png"></img>
 				</td>
